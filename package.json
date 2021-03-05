@@ -57,6 +57,12 @@
 		"not dead"
 	],
 
+	"babel": {
+		"plugins": [
+			"babel-plugin-macros"
+		]
+	},
+
 	"babelMacros": {
   		"twin": {
     		"preset": "styled-components"
