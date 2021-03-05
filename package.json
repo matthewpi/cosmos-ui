@@ -55,5 +55,11 @@
 		"last 2 versions",
 		"firefox esr",
 		"not dead"
-	]
+	],
+
+	"babelMacros": {
+  		"twin": {
+    		"preset": "styled-components"
+  		}
+	}
 }
