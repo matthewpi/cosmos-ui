@@ -43,7 +43,8 @@
 		"tailwindcss": "^2.0.3",
 		"twin.macro": "^2.3.0",
 		"typescript": "^4.2.2",
-		"vite": "^2.0.5"
+		"vite": "^2.0.5",
+		"vite-plugin-babel-macros": "^1.0.4"
 	},
 
 	"engines": {
@@ -57,15 +58,10 @@
 		"not dead"
 	],
 
-	"babel": {
-		"plugins": [
-			"babel-plugin-macros"
-		]
-	},
-
 	"babelMacros": {
   		"twin": {
-    		"preset": "styled-components"
+    		"preset": "styled-components",
+			"includeClassNames": true
   		}
 	}
 }
