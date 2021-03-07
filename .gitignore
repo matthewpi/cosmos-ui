@@ -64,8 +64,4 @@ yarn-error.log
 #-------------------#
 
 /.logs
-/dist/**/*.css
-/dist/**/*.html
-/dist/**/*.js
-/dist/**/*.json
-/dist/**/*.map
+/dist
