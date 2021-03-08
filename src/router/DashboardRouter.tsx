@@ -7,8 +7,8 @@ export default ({ location }: RouteComponentProps) => {
 	return (
 		<>
 			<Switch location={location}>
-				<Route path={'/'} component={DashboardContainer} exact />
-				<Route path={'*'} component={NotFound} />
+				<Route path="/" component={DashboardContainer} exact />
+				<Route path="*" component={NotFound} />
 			</Switch>
 		</>
 	);

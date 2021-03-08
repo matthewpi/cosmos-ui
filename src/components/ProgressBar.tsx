@@ -12,13 +12,13 @@ const BarFill = styled.div`
 
 const randomInt = (low: number, high: number) => Math.floor(Math.random() * (high - low) + low);
 
-type MutableRef<T> = {
-	-readonly [K in keyof RefObject<T>]: RefObject<T>[K];
+type Mutable<T> = {
+	-readonly [K in keyof T]: T[K];
 }
 
 const ProgressBar = () => {
-	const interval = useRef<NodeJS.Timeout>(null) as MutableRef<NodeJS.Timeout>;
-	const timeout = useRef<NodeJS.Timeout>(null) as MutableRef<NodeJS.Timeout>;
+	const interval = useRef<NodeJS.Timeout>(null) as Mutable<RefObject<NodeJS.Timeout>>;
+	const timeout = useRef<NodeJS.Timeout>(null) as Mutable<RefObject<NodeJS.Timeout>>;
     const [ visible, setVisible ] = useState(false);
     const progress = useStoreState(state => state.progress.progress);
     const continuous = useStoreState(state => state.progress.continuous);

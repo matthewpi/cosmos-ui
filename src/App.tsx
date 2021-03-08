@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { StoreProvider } from 'easy-peasy';
 import { Route, Router, Switch } from 'react-router-dom';
 import tw, { GlobalStyles } from 'twin.macro';
@@ -25,12 +25,10 @@ const App = () => {
 
 				<div css={tw`w-auto mx-auto`}>
 					<Router history={history}>
-						<Suspense fallback={<div>Loading...</div>}>
-							<Switch>
-								<Route path="/" component={DashboardRouter} />
-								<Route path={'*'} component={NotFound} />
-							</Switch>
-						</Suspense>
+						<Switch>
+							<Route path="/" component={DashboardRouter} />
+							<Route path="*" component={NotFound} />
+						</Switch>
 					</Router>
 				</div>
 			</StoreProvider>
