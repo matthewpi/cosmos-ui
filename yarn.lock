@@ -6500,10 +6500,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-babel-macros@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/vite-plugin-babel-macros/-/vite-plugin-babel-macros-1.0.4.tgz#f61908cda57648b5cedd0209857a2f8b6adee77f"
-  integrity sha512-NFWytHJfSKJ+38kGy3S5phFuzJLL5RRW9+zRG+lJA7wyvE9PzkFglN6mNQImynAWjwaCcwSHgOJ3K9Rwr2AAoA==
+vite-plugin-babel-macros@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/vite-plugin-babel-macros/-/vite-plugin-babel-macros-1.0.5.tgz#417216812460eb0605d49a968dcea24e04f0d061"
+  integrity sha512-QPPeIIiu1y6C9T0pG8gkOSuE5ukQ1o4AIaYGm9b8yFsk7C4T4wLmzxpXrVYMMWGmZ0ul5ZaNP+NY9+ROGMDiVw==
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/plugin-syntax-jsx" "^7.12.13"
