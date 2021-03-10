@@ -13,7 +13,7 @@
 
 	"dependencies": {
 		"@hcaptcha/react-hcaptcha": "^0.3.4",
-		"debounce": "^1.2.0",
+		"debounce": "^1.2.1",
 		"easy-peasy": "^5.0.3",
 		"formik": "^2.2.6",
 		"react": "^17.0.1",
