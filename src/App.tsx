@@ -18,10 +18,10 @@ export const NotFound = () => {
 const App = () => {
 	return (
 		<>
-			<GlobalStyles/>
+			<GlobalStyles />
 
 			<StoreProvider store={store}>
-				<ProgressBar/>
+				<ProgressBar />
 
 				<div css={tw`w-auto mx-auto`}>
 					<Router history={history}>
