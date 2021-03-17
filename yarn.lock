@@ -261,10 +261,10 @@
     date-fns "^1.27.2"
     figures "^1.7.0"
 
-"@cypress/react@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.1.1.tgz#5de3f9ea5f0660e95fbcc56c8aff16aec6074445"
-  integrity sha512-QZoVF+dgHmJ1MIIZGCtJCfMxqSwcIWcE4LdZnRcHUEGsJZPLBprq3DwhdcrpsH7PSfGMUBViJTrV54UvUggBQQ==
+"@cypress/react@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.1.2.tgz#4391102e88e18415cd4b3f4597c09f7984c6334e"
+  integrity sha512-yI1nJ5cP5CRhxPMtLpp1K2wgKexC85f4p+nLcDuu4klqCwJEB8g/o6i+aSlBFqP4gGPz548MUhokf6/9pWVRFg==
   dependencies:
     "@cypress/webpack-preprocessor" "5.6.0"
     debug "4.3.2"
