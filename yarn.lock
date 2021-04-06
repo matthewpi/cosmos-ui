@@ -261,12 +261,12 @@
     date-fns "^1.27.2"
     figures "^1.7.0"
 
-"@cypress/react@^5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.2.0.tgz#b86218052676979f13a6e2e4b4457293eb29182f"
-  integrity sha512-wEcJtRpyZPsG5xCMH3ZPDXv7rLcFOWLlxkPsVNDdGAe3Mog/GcbDiqxexzkBTsAEz502H5cgP+HTHCVQNah9pg==
+"@cypress/react@^5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.3.2.tgz#bec167e65894548ffa4da495c3504b1412c2740e"
+  integrity sha512-oZbvglecEg9i0KIISQ9uYBrD12s0sMsQOtOCiH+I+fUafQ+th2Y09xQuYFgjUu3JA5co1ERgy92pCaZNfV2Ytw==
   dependencies:
-    "@cypress/webpack-preprocessor" "5.6.0"
+    "@cypress/webpack-preprocessor" "5.7.0"
     debug "4.3.2"
     find-webpack "2.2.1"
     find-yarn-workspace-root "2.0.0"
@@ -297,10 +297,10 @@
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
-"@cypress/webpack-preprocessor@5.6.0":
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@cypress/webpack-preprocessor/-/webpack-preprocessor-5.6.0.tgz#9648ae22d2e52f17a604e2a493af27a9c96568bd"
-  integrity sha512-kSelTDe6gs3Skp4vPP2vfTvAl+Ua+9rR/AMTir7bgJihDvzFESqnjWtF6N1TrPo+vCFVGx0VUA6JUvDkhvpwhA==
+"@cypress/webpack-preprocessor@5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@cypress/webpack-preprocessor/-/webpack-preprocessor-5.7.0.tgz#653c92662fe885260f176f5a1bd630dfd2cee8ca"
+  integrity sha512-E60lsdMoIJFR36t7J2yjcAH3vrxF1WecoTIz4PL7Km/LrIEx1/qafEeyGuHTBynr/RBd4kCaS2XLJW75hOeLSw==
   dependencies:
     bluebird "^3.7.1"
     debug "4.3.2"
