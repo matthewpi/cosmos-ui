@@ -261,17 +261,17 @@
     date-fns "^1.27.2"
     figures "^1.7.0"
 
-"@cypress/mount-utils@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.1.tgz#04a3b9c73add3daf2f0ba38a610dc49de9e8a252"
-  integrity sha512-mfY3W/5gJpXEgONguawAeTdI0n2wNvM0oW1aP4UyYLkTK6RhSS+95CU2tvW3RNuA3xJzpfOCDODtOgLBZI4obg==
+"@cypress/mount-utils@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cypress/mount-utils/-/mount-utils-1.0.2.tgz#afbc4f8c350b7cd86edc5ad0db0cbe1e0181edc8"
+  integrity sha512-Fn3fdTiyayHoy8Ol0RSu4MlBH2maQ2ZEXeEVKl/zHHXEQpld5HX3vdNLhK5YLij8cLynA4DxOT/nO9iEnIiOXw==
 
-"@cypress/react@^5.4.1":
-  version "5.4.1"
-  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.4.1.tgz#017cf06a0c1ac705f5065a39f5827af113df5076"
-  integrity sha512-VqbloLpz32Zi2IU9cKDjinmb9TVcId1XsCU4C3wuUOzp1dHnQ6lKNSxKnKiODOsEdh5GvahcbZ0INgwOk2vP9w==
+"@cypress/react@^5.4.2":
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/@cypress/react/-/react-5.4.2.tgz#5bff55d8e50f7122d9581c54de39ac90993044de"
+  integrity sha512-fpuZIsX1fRurgMSIYe0+BQrdCHsTWzD07SKYKF85nqJZ2/B8yNDJpkCSp5qyOG2uU3F+tw+BbMAMPL1zTq4yHA==
   dependencies:
-    "@cypress/mount-utils" "1.0.1"
+    "@cypress/mount-utils" "1.0.2"
     "@cypress/webpack-preprocessor" "5.7.0"
     debug "4.3.2"
     find-webpack "2.2.1"
