@@ -31,7 +31,7 @@
 	"devDependencies": {
 		"@cypress/react": "^5.9.0",
 		"@tailwindcss/aspect-ratio": "^0.2.1",
-		"@tailwindcss/forms": "^0.3.2",
+		"@tailwindcss/forms": "^0.3.3",
 		"@tailwindcss/typography": "^0.4.1",
 		"@types/debounce": "^1.2.0",
 		"@types/mocha": "^8.2.2",
