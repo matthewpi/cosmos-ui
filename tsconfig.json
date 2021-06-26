@@ -19,13 +19,15 @@
 		"esModuleInterop": true,
 		"sourceMap": true,
 		"importsNotUsedAsValues": "preserve",
-
 		"paths": {
 			"~/*": [
-				"./src/*"
-			]
+				"./src/*",
+			],
 		},
 	},
-
-	"include": [ "./src/**/*.ts", "./src/**/*.d.ts", "./src/**/*.tsx" ]
+	"include": [
+		"./src/**/*.ts",
+		"./src/**/*.d.ts",
+		"./src/**/*.tsx",
+	],
 }

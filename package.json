@@ -2,7 +2,6 @@
 	"name": "@matthewpi/cosmos-ui",
 	"version": "0.0.1",
 	"private": true,
-
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
@@ -10,7 +9,6 @@
 		"test": "cypress open",
 		"test:ci": "cypress run --headless"
 	},
-
 	"dependencies": {
 		"@hcaptcha/react-hcaptcha": "^0.3.6",
 		"debounce": "^1.2.1",
@@ -27,7 +25,6 @@
 		"swr": "^0.5.6",
 		"yup": "^0.32.9"
 	},
-
 	"devDependencies": {
 		"@cypress/react": "^5.9.1",
 		"@tailwindcss/aspect-ratio": "^0.2.1",
@@ -55,24 +52,21 @@
 		"vite": "^2.3.8",
 		"vite-plugin-babel-macros": "^1.0.5"
 	},
-
 	"engines": {
-		"node": ">=12"
+		"node": ">=12",
+		"yarn": "^1.22.x"
 	},
-
 	"browserslist": [
 		"> 0.5%",
 		"last 2 versions",
 		"firefox esr",
 		"not dead"
 	],
-
 	"babelMacros": {
   		"twin": {
     		"preset": "styled-components",
 			"includeClassNames": true
   		},
-
 		"styledComponents": {
 			"pure": true,
 			"displayName": false,

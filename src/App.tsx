@@ -1,11 +1,13 @@
-import React from 'react';
 import { StoreProvider } from 'easy-peasy';
+import React from 'react';
 import { Route, Router, Switch } from 'react-router-dom';
 import tw, { GlobalStyles } from 'twin.macro';
 import { history } from '~/history';
 import { store } from '~/state';
 import ProgressBar from '~/components/ProgressBar';
 import DashboardRouter from '~/router/DashboardRouter';
+
+import '~/inter.css';
 
 export const NotFound = () => {
 	return (

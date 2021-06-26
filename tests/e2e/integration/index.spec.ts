@@ -2,8 +2,8 @@
 
 describe('Homepage', () => {
 	it('Shows correct text', () => {
-		cy.visit('/')
+		cy.visit('/');
 
-		cy.contains('h1', 'Hello, world!')
-	})
+		cy.contains('h1', 'Hello, world!');
+	});
 });
