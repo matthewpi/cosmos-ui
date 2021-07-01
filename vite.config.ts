@@ -24,7 +24,11 @@ export default defineConfig({
 	},
 
 	define: {
-		'process.platform': JSON.stringify('win32'),
 		'process.env': {},
+	},
+
+	esbuild: {
+		jsxFactory: 'jsx',
+		jsxInject: 'import { jsx } from \'@emotion/react\'',
 	},
 });

@@ -1,33 +1,41 @@
 {
 	"compilerOptions": {
+		"baseUrl": ".",
+
+		"module": "ESNext",
+		"moduleResolution": "Node",
 		"target": "ESNext",
 		"lib": [ "DOM", "DOM.Iterable", "ESNext" ],
 		"types": [ "vite/client", "cypress", "node" ],
+
+		"jsx": "preserve",
+		"jsxImportSource": "@emotion/react",
+
 		"allowJs": false,
-		"skipLibCheck": false,
-		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"baseUrl": ".",
-		"jsx": "react",
-		"strict": true,
-		"noEmit": true,
-		"noImplicitReturns": true,
-		"moduleResolution": "Node",
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
 		"sourceMap": true,
-		"importsNotUsedAsValues": "preserve",
+		"strict": true,
+
 		"paths": {
 			"~/*": [
-				"./src/*",
-			],
-		},
+				"./src/*"
+			]
+		}
 	},
+
 	"include": [
-		"./src/**/*.ts",
-		"./src/**/*.d.ts",
-		"./src/**/*.tsx",
+		"./src/**/*"
 	],
+
+	"exclude": [
+		"/node_modules/"
+	]
 }

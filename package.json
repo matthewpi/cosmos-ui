@@ -7,10 +7,12 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "cypress open",
-		"test:ci": "cypress run --headless"
+		"test:ci": "cypress run --headless",
+		"lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx"
 	},
 	"dependencies": {
-		"@hcaptcha/react-hcaptcha": "^0.3.6",
+		"@emotion/react": "^11.4.0",
+		"@emotion/styled": "^11.3.0",
 		"debounce": "^1.2.1",
 		"easy-peasy": "^5.0.3",
 		"formik": "^2.2.9",
@@ -20,8 +22,6 @@
 		"react-router-dom": "^5.2.0",
 		"react-select": "^4.3.1",
 		"react-transition-group": "^4.4.2",
-		"styled-components": "^5.3.0",
-		"styled-components-breakpoint": "^3.0.0-preview.20",
 		"swr": "^0.5.6",
 		"yup": "^0.32.9"
 	},
@@ -33,18 +33,24 @@
 		"@types/debounce": "^1.2.0",
 		"@types/mocha": "^8.2.2",
 		"@types/node": "^15.12.5",
-		"@types/react": "^17.0.11",
+		"@types/react": "^17.0.13",
 		"@types/react-dom": "^17.0.8",
 		"@types/react-router-dom": "^5.1.7",
 		"@types/react-select": "^4.0.16",
 		"@types/react-transition-group": "^4.4.1",
-		"@types/styled-components": "^5.1.10",
 		"@types/yup": "^0.29.11",
+		"@typescript-eslint/eslint-plugin": "^4.28.1",
+		"@typescript-eslint/parser": "^4.28.1",
 		"@vitejs/plugin-react-refresh": "^1.3.4",
 		"autoprefixer": "^10.2.6",
 		"cypress": "^7.6.0",
 		"eslint": "^7.29.0",
+		"eslint-config-standard": "^16.0.3",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-promise": "^5.1.0",
 		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
 		"postcss": "^8.3.5",
 		"tailwindcss": "^2.2.4",
 		"twin.macro": "^2.5.0",
@@ -63,14 +69,8 @@
 		"not dead"
 	],
 	"babelMacros": {
-  		"twin": {
-    		"preset": "styled-components",
-			"includeClassNames": true
-  		},
-		"styledComponents": {
-			"pure": true,
-			"displayName": false,
-			"fileName": false
+		"twin": {
+			"preset": "emotion"
 		}
 	}
 }

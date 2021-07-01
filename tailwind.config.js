@@ -1,8 +1,13 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
 	theme: {
 		extend: {
+			colors: {
+				rose: colors.rose,
+			},
+
 			fontFamily: {
 				sans: [
 					'Inter var',
@@ -17,4 +22,6 @@ module.exports = {
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/typography'),
 	],
+
+	purge: [],
 };

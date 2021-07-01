@@ -1,8 +1,9 @@
 import { useStoreActions, useStoreState } from 'easy-peasy';
-import React, { RefObject, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import styled from 'styled-components/macro';
-import tw from 'twin.macro';
+import tw, { styled } from 'twin.macro';
+
+const randomInt = (low: number, high: number) => Math.floor(Math.random() * (high - low) + low);
 
 const BarFill = styled.div`
 	${tw`h-full bg-blue-400`};
@@ -10,16 +11,12 @@ const BarFill = styled.div`
 	box-shadow: 0 -2px 10px 2px hsl(178, 78%, 57%);
 `;
 
-const randomInt = (low: number, high: number) => Math.floor(Math.random() * (high - low) + low);
-
-type Mutable<T> = {
-	-readonly [K in keyof T]: T[K];
-}
-
-const ProgressBar = () => {
-	const interval = useRef<NodeJS.Timeout>(null) as Mutable<RefObject<NodeJS.Timeout>>;
-	const timeout = useRef<NodeJS.Timeout>(null) as Mutable<RefObject<NodeJS.Timeout>>;
+export function ProgressBar(): JSX.Element {
 	const [ visible, setVisible ] = useState(false);
+
+	const interval = useRef<NodeJS.Timeout>();
+	const timeout = useRef<NodeJS.Timeout>();
+
 	const progress = useStoreState(state => state.progress.progress);
 	const continuous = useStoreState(state => state.progress.continuous);
 	const setProgress = useStoreActions(actions => actions.progress.setProgress);
@@ -62,12 +59,10 @@ const ProgressBar = () => {
 	}, [ progress, continuous ]);
 
 	return (
-		<div css={tw`fixed z-10 w-full`} style={{ height: '2px' }}>
+		<div css={tw`h-[2px] fixed z-10 w-full`}>
 			<CSSTransition timeout={150} appear in={visible} unmountOnExit classNames="fade">
 				<BarFill style={{ width: progress === undefined ? '100%' : `${progress}%` }} />
 			</CSSTransition>
 		</div>
 	);
-};
-
-export default ProgressBar;
+}

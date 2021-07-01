@@ -1,27 +1,19 @@
-import { DOMAttributes } from 'react';
-import styledImport, { CSSProp, css as cssImport } from 'styled-components';
+import { css as cssImport } from '@emotion/react';
+import { CSSInterpolation } from '@emotion/serialize';
+import styledImport from '@emotion/styled';
 import 'twin.macro';
+
+declare module 'twin.macro' {
+	const styled: typeof styledImport;
+	const css: typeof cssImport;
+}
 
 declare module 'react' {
 	interface HTMLAttributes<T> extends DOMAttributes<T> {
-		css?: CSSProp
+		css?: CSSInterpolation;
 	}
 
-	interface SVGProps<T> extends SVGProps<SVGSVGElement> {
-		css?: CSSProp
-	}
-}
-
-declare module 'twin.macro' {
-	const styled: typeof styledImport
-	const css: typeof cssImport
-}
-
-declare global {
-	namespace JSX {
-		// @ts-ignore
-		interface IntrinsicAttributes<T> extends DOMAttributes<T> {
-			as?: string | Element
-		}
+	interface SVGProps<T> extends SVGProps<T> {
+		css?: CSSInterpolation;
 	}
 }

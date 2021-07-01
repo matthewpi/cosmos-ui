@@ -1,8 +1,5 @@
-import React from 'react';
+import { Fragment } from 'react';
 
-export default () => {
-	return (
-		<>
-		</>
-	);
-};
+export function FlashRenderer(): JSX.Element {
+	return <Fragment />;
+}
