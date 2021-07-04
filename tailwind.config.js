@@ -23,5 +23,5 @@ module.exports = {
 		require('@tailwindcss/typography'),
 	],
 
-	purge: [],
+	purge: false,
 };

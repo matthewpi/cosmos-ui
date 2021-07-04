@@ -1,7 +1,31 @@
 import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
+import { object, string } from 'yup';
+import { Field, Form } from '~/components/Form';
+
+interface Values {
+	email: string;
+	password: string;
+}
 
 export function LoginContainer(): JSX.Element {
+	const initialValues: Values = {
+		email: '',
+		password: '',
+	};
+
+	const validationSchema = object().shape({
+		email: string()
+			.required()
+			.email(),
+		password: string()
+			.required(),
+	});
+
+	const onSubmit = () => {
+		//
+	};
+
 	return (
 		<div css={tw`flex flex-col justify-center min-h-screen py-12 bg-gray-50 sm:px-6 lg:px-8`}>
 			<div css={tw`sm:mx-auto sm:w-full sm:max-w-md`}>
@@ -12,42 +36,26 @@ export function LoginContainer(): JSX.Element {
 				/>
 			</div>
 
-			<div css={tw`mt-8 sm:mx-auto sm:w-full sm:max-w-md`}>
+			<div css={tw`mt-10 sm:mx-auto sm:w-full sm:max-w-md`}>
 				<div css={tw`px-4 sm:px-10`}>
-					<form css={tw`space-y-6`} action="#" method="POST" onSubmit={(e) => e.preventDefault()}>
-						<div>
-							<label htmlFor="email" css={tw`sr-only`}>
-								Email address
-							</label>
-							<div css={tw`mt-1`}>
-								<input
-									id="email"
-									name="email"
-									type="email"
-									autoComplete="email"
-									placeholder="Email address"
-									required
-									css={tw`block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`}
-								/>
-							</div>
-						</div>
+					<Form css={tw`space-y-6`} initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
+						<Field
+							id="email"
+							name="email"
+							type="email"
+							autoComplete="email"
+							label="Email address"
+							placeholder="Email address"
+						/>
 
-						<div>
-							<label htmlFor="password" css={tw`sr-only`}>
-								Password
-							</label>
-							<div css={tw`mt-1`}>
-								<input
-									id="password"
-									name="password"
-									type="password"
-									autoComplete="current-password"
-									placeholder="Password"
-									required
-									css={tw`block w-full px-3 py-2 placeholder-gray-400 border border-gray-300 rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`}
-								/>
-							</div>
-						</div>
+						<Field
+							id="password"
+							name="password"
+							type="password"
+							autoComplete="current-password"
+							label="Password"
+							placeholder="Password"
+						/>
 
 						<div>
 							<button
@@ -65,7 +73,7 @@ export function LoginContainer(): JSX.Element {
 								</Link>
 							</div>
 						</div>
-					</form>
+					</Form>
 				</div>
 			</div>
 		</div>

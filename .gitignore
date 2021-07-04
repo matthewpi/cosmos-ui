@@ -27,12 +27,19 @@ dependency-reduced-pom.xml
 /node_modules
 npm-debug.log
 
+.cache
+.eslintcache
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 .yarn-integrity
 yarn-debug.log
 yarn-error.log
-
-.cache
-.eslintcache
 
 # PHP
 /vendor

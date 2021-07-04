@@ -16,6 +16,7 @@ settings:
       linkAttribute: to
 env:
   browser: true
+  es6: true
 plugins:
   - react
   - react-hooks
@@ -41,11 +42,14 @@ rules:
     - warn
     - always
   space-before-function-paren: 0
+  spaced-comment: 0
   quotes:
     - warn
     - single
-  react/display-name: 0
-  react/prop-types: 0
+  react/display-name:
+    - warn
+  react/prop-types:
+    - warn
   react/jsx-indent-props:
     - warn
     - tab
@@ -59,7 +63,8 @@ rules:
   react/react-in-jsx-scope: 0
   react-hooks/rules-of-hooks:
     - error
-  react-hooks/exhaustive-deps: 0
+  react-hooks/exhaustive-deps:
+    - warn
   "@typescript-eslint/ban-ts-comment": 0
   "@typescript-eslint/ban-ts-ignore": 0
   "@typescript-eslint/explicit-function-return-type": 0
