@@ -20,11 +20,11 @@ export function ProgressBar(): JSX.Element {
 	const interval = useRef<NodeJS.Timeout>();
 	const timeout = useRef<NodeJS.Timeout>();
 
-	const progress = useStoreState(state => state.progress.progress);
-	const setProgress = useStoreActions(actions => actions.progress.setProgress);
-	const continuous = useStoreState(state => state.progress.continuous);
+	const progress = useStoreState((state) => state.progress.progress);
+	const setProgress = useStoreActions((actions) => actions.progress.setProgress);
+	const continuous = useStoreState((state) => state.progress.continuous);
 
-	const [ visible, setVisible ] = useState(false);
+	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
 		return () => {
@@ -41,7 +41,7 @@ export function ProgressBar(): JSX.Element {
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [ progress ]);
+	}, [progress]);
 
 	useEffect(() => {
 		if (!continuous) {
@@ -54,7 +54,7 @@ export function ProgressBar(): JSX.Element {
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [ continuous ]);
+	}, [continuous]);
 
 	useEffect(() => {
 		if (!continuous) {
@@ -70,7 +70,7 @@ export function ProgressBar(): JSX.Element {
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [ continuous, progress ]);
+	}, [continuous, progress]);
 
 	return (
 		<div css={tw`h-[2px] fixed z-10 w-full`}>

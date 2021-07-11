@@ -25,10 +25,11 @@ extends:
   - standard
   - plugin:react/recommended
   - plugin:@typescript-eslint/recommended
+  - prettier
 rules:
   array-bracket-spacing:
     - warn
-    - always
+    - never
   comma-dangle:
     - warn
     - always-multiline
