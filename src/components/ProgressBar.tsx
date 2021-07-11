@@ -8,7 +8,11 @@ const randomInt = (low: number, high: number) => {
 	return Math.floor(Math.random() * (high - low) + low);
 };
 
-const BarFill: StyledComponent<HTMLAttributes<HTMLDivElement>, DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, HTMLAttributes<HTMLDivElement>> = styled.div`
+const BarFill: StyledComponent<
+	HTMLAttributes<HTMLDivElement>,
+	DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+	HTMLAttributes<HTMLDivElement>
+> = styled.div`
 	${tw`h-full bg-rose-600`};
 	transition: 250ms ease-in-out;
 	box-shadow: 0 -2px 10px 2px ${theme`colors.rose.600`};
@@ -50,7 +54,7 @@ export function ProgressBar(): JSX.Element {
 		}
 
 		if (!progress || progress === 0) {
-			setProgress(randomInt(20, 30));
+			setProgress(randomInt(10, 20));
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps
@@ -66,7 +70,7 @@ export function ProgressBar(): JSX.Element {
 		if ((progress ?? 0) >= 90) {
 			setProgress(90);
 		} else {
-			interval.current = setTimeout(() => setProgress((progress ?? 0) + randomInt(1, 5)), 500);
+			interval.current = setTimeout(() => setProgress((progress ?? 0) + randomInt(1, 5)), 333);
 		}
 
 		// eslint-disable-next-line react-hooks/exhaustive-deps

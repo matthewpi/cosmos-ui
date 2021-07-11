@@ -31,13 +31,35 @@ export function LoginContainer(): JSX.Element {
 
 			<div css={tw`mt-10 sm:mx-auto sm:w-full sm:max-w-md`}>
 				<div css={tw`px-4 sm:px-10`}>
-					<Form css={tw`space-y-6`} initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-						<Field id="email" name="email" type="email" autoComplete="email" label="Email address" placeholder="Email address" />
+					<Form
+						css={tw`space-y-6`}
+						initialValues={initialValues}
+						validationSchema={validationSchema}
+						onSubmit={onSubmit}
+					>
+						<Field
+							id="email"
+							name="email"
+							type="email"
+							autoComplete="email"
+							label="Email address"
+							placeholder="Email address"
+						/>
 
-						<Field id="password" name="password" type="password" autoComplete="current-password" label="Password" placeholder="Password" />
+						<Field
+							id="password"
+							name="password"
+							type="password"
+							autoComplete="current-password"
+							label="Password"
+							placeholder="Password"
+						/>
 
 						<div>
-							<button type="submit" css={tw`flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500`}>
+							<button
+								type="submit"
+								css={tw`flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500`}
+							>
 								Sign in
 							</button>
 						</div>

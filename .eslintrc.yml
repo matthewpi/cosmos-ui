@@ -83,8 +83,8 @@ overrides:
       - "**/*.tsx"
     rules:
       operator-linebreak:
-        - error
-        - before
+        - warn
+        - after
         - overrides:
             "&&": "after"
             "?": "ignore"
