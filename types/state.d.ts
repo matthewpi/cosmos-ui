@@ -1,4 +1,5 @@
 import { Actions, State } from 'easy-peasy';
+
 import { ApplicationStore } from '~/state';
 
 declare module 'easy-peasy' {

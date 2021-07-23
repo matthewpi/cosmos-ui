@@ -8,7 +8,8 @@
 		"preview": "vite preview",
 		"test": "cypress open",
 		"test:ci": "cypress run --headless",
-		"lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx"
+		"lint": "eslint ./{src,types}/**/*.{ts,tsx} --ext .ts,.tsx --fix",
+		"format": "prettier --write --ignore-unknown ./{src,types}/**/*.{ts,tsx}"
 	},
 	"dependencies": {
 		"@emotion/react": "^11.4.0",
@@ -79,9 +80,9 @@
 		}
 	},
 	"lint-staged": {
-		"./src/**/*": [
-			"eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx",
-			"prettier --write --ignore-unknown"
+		"./{src,types}/**/*.{ts,tsx}": [
+			"npm run lint",
+			"npm run format"
 		]
 	}
 }
