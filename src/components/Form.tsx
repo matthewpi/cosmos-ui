@@ -1,5 +1,5 @@
 import { ExclamationCircleIcon } from '@heroicons/react/solid';
-import { Formik, Field as FField, FieldProps as FFieldProps, Form as FForm, FormikHelpers } from 'formik';
+import { Field as FField, FieldProps as FFieldProps, Form as FForm, Formik, FormikHelpers } from 'formik';
 import { forwardRef, ReactNode } from 'react';
 import tw from 'twin.macro';
 

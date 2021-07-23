@@ -1,4 +1,5 @@
 import { createStore } from 'easy-peasy';
+
 import flashes, { FlashStore } from '~/state/flashes';
 import progress, { ProgressStore } from '~/state/progress';
 

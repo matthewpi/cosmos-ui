@@ -20,6 +20,7 @@ env:
 plugins:
   - react
   - react-hooks
+  - simple-import-sort
   - "@typescript-eslint"
 extends:
   - standard
@@ -65,6 +66,15 @@ rules:
   react-hooks/rules-of-hooks:
     - error
   react-hooks/exhaustive-deps:
+    - warn
+  simple-import-sort/imports:
+    - warn
+    - groups:
+      - ["^@?\\w"]
+      - ["^"]
+      - ["^\\."]
+      - ["^\\u0000"]
+  simple-import-sort/exports:
     - warn
   "@typescript-eslint/ban-ts-comment": 0
   "@typescript-eslint/ban-ts-ignore": 0

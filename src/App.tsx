@@ -1,11 +1,12 @@
 import { StoreProvider } from 'easy-peasy';
 import { Route, Router, Switch } from 'react-router-dom';
 import tw from 'twin.macro';
-import { history } from '~/history';
-import { store } from '~/state';
+
 import { ProgressBar } from '~/components/ProgressBar';
+import { history } from '~/history';
 import { AuthRouter } from '~/router/AuthRouter';
 import { DashboardRouter } from '~/router/DashboardRouter';
+import { store } from '~/state';
 
 import '~/inter.css';
 
