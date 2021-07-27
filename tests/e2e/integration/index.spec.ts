@@ -1,9 +1,5 @@
-/// <reference types="cypress" />
-
-describe('Homepage', () => {
-	it('Shows correct text', () => {
-		cy.visit('/');
-
-		cy.contains('h1', 'Hello, world!');
+describe('Cypress', () => {
+	it('does Cypress work?', () => {
+		expect(true).to.equal(true);
 	});
 });
