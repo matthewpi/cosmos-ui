@@ -1,6 +1,6 @@
+import reactRefresh from '@vitejs/plugin-react-refresh';
 import path from 'path';
 import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
 import macrosPlugin from 'vite-plugin-babel-macros';
 
 export default defineConfig({
@@ -28,7 +28,6 @@ export default defineConfig({
 	},
 
 	esbuild: {
-		jsxFactory: 'jsx',
-		jsxInject: 'import { jsx } from \'@emotion/react\';',
+		jsxInject: 'import React from \'react\';',
 	},
 });

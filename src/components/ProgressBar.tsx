@@ -1,6 +1,5 @@
-import { StyledComponent } from '@emotion/styled';
 import { useStoreActions, useStoreState } from 'easy-peasy';
-import { DetailedHTMLProps, HTMLAttributes, useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import tw, { styled, theme } from 'twin.macro';
 
@@ -8,18 +7,15 @@ const randomInt = (low: number, high: number) => {
 	return Math.floor(Math.random() * (high - low) + low);
 };
 
-const BarFill: StyledComponent<
-	HTMLAttributes<HTMLDivElement>,
-	DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-	HTMLAttributes<HTMLDivElement>
-> = styled.div`
-	${tw`h-full bg-rose-600`};
-	transition: 250ms ease-in-out;
-	box-shadow: 0 -2px 10px 2px ${theme`colors.rose.600`};
-`;
+const BarFill = styled.div({
+	...tw`h-full bg-rose-600`,
+
+	transition: '250ms ease-in-out',
+	boxShadow: '0 -2px 10px 2px ' + theme`colors.rose.600`,
+});
 
 export function ProgressBar(): JSX.Element {
-	const nodeRef = useRef(null);
+	const ref = useRef(null);
 
 	const interval = useRef<NodeJS.Timeout>();
 	const timeout = useRef<NodeJS.Timeout>();
@@ -78,8 +74,8 @@ export function ProgressBar(): JSX.Element {
 
 	return (
 		<div css={tw`h-[2px] fixed z-10 w-full`}>
-			<CSSTransition nodeRef={nodeRef} timeout={150} appear in={visible} unmountOnExit classNames="fade">
-				<BarFill ref={nodeRef} style={{ width: progress === undefined ? '100%' : `${progress}%` }} />
+			<CSSTransition nodeRef={ref} timeout={150} appear in={visible} unmountOnExit classNames="fade">
+				<BarFill ref={ref} style={{ width: progress === undefined ? '100%' : `${progress}%` }} />
 			</CSSTransition>
 		</div>
 	);

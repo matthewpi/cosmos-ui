@@ -1,8 +1,6 @@
-import { createCss, StitchesCss } from '@stitches/react';
+import { createStitches, CSS as StitchesCSS } from '@stitches/react';
 
-const stitches = createCss({});
+const stitches = createStitches({});
 
-export type CSS = StitchesCss<typeof stitches>;
-export type { StitchesVariants } from '@stitches/react';
-
-export const { css, global, keyframes, styled, theme, getCssString } = stitches;
+export const { css, globalCss, keyframes, styled, theme, getCssText } = stitches;
+export type CSS = StitchesCSS<typeof stitches>;
