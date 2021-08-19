@@ -1,9 +1,8 @@
 import { StoreProvider } from 'easy-peasy';
-import { Route, Router, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import tw, { globalStyles } from 'twin.macro';
 
 import { ProgressBar } from '~/components/ProgressBar';
-import { history } from '~/history';
 import { AuthRouter } from '~/router/AuthRouter';
 import { DashboardRouter } from '~/router/DashboardRouter';
 import { store } from '~/state';
@@ -238,13 +237,17 @@ export function App(): JSX.Element {
 			<ProgressBar />
 
 			<div css={tw`w-auto mx-auto`}>
-				<Router history={history}>
-					<Switch>
-						<Route path="/auth" component={AuthRouter} />
-						<Route path="/" component={DashboardRouter} />
-						<Route path="*" component={NotFound} />
-					</Switch>
-				</Router>
+				<BrowserRouter>
+					<Routes>
+						<Route path="/*">
+							<Route path="*" element={<DashboardRouter />} />
+						</Route>
+						<Route path="auth/*">
+							<Route path="*" element={<AuthRouter />} />
+						</Route>
+						<Route path="*" element={<NotFound />} />
+					</Routes>
+				</BrowserRouter>
 			</div>
 		</StoreProvider>
 	);

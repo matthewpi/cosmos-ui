@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 
 export function DashboardContainer(): JSX.Element {
-	const startContinuous = useStoreActions((actions) => actions.progress.startContinuous);
-	const setComplete = useStoreActions((actions) => actions.progress.setComplete);
+	const startContinuous = useStoreActions(actions => actions.progress.startContinuous);
+	const setComplete = useStoreActions(actions => actions.progress.setComplete);
 
 	return (
 		<div css={tw`relative overflow-hidden`}>

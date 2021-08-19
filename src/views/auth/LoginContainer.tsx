@@ -67,7 +67,7 @@ export function LoginContainer(): JSX.Element {
 
 						<div>
 							<div css={tw`text-sm text-center`}>
-								<Link to="/" css={tw`font-medium text-rose-600 hover:text-rose-500`}>
+								<Link to="../../" css={tw`font-medium text-rose-600 hover:text-rose-500`}>
 									Forgot password?
 								</Link>
 							</div>

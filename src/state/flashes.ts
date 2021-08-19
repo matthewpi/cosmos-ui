@@ -30,7 +30,7 @@ const flashes: FlashStore = {
 	}),
 
 	clearFlashes: action((state, payload) => {
-		state.items = payload ? state.items.filter((flashes) => flashes.key !== payload) : [];
+		state.items = payload ? state.items.filter(flashes => flashes.key !== payload) : [];
 	}),
 };
 
