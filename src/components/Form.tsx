@@ -1,5 +1,4 @@
 import { ExclamationCircleIcon } from '@heroicons/react/solid';
-import { css } from '@stitches/react';
 import { Field as FField, FieldProps as FFieldProps, Form as FForm, Formik, FormikHelpers } from 'formik';
 import { forwardRef, ReactNode } from 'react';
 import tw, { styled } from 'twin.macro';
@@ -30,12 +29,18 @@ const FieldWrapper = styled.div({
 	},
 });
 
-const inputStyle = css({
+const Input = styled.input({
 	...tw`block w-full px-3 py-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`,
 	variants: {
 		hasError: {
-			true: tw`text-red-900 placeholder-red-300 border-red-300`,
-			false: tw`text-gray-400 placeholder-gray-400 border-gray-300`,
+			true: {
+				...tw`text-red-900 border-red-300`,
+				'&::placeholder': tw`text-red-300`,
+			},
+			false: {
+				...tw`text-gray-400 border-gray-300`,
+				'&::placeholder': tw`text-gray-400`,
+			},
 		},
 	},
 });
@@ -64,14 +69,7 @@ export const Field = forwardRef<HTMLInputElement, FieldProps>(function Field(
 					)}
 
 					<FieldWrapper hasLabel={showLabel}>
-						<input
-							id={id}
-							{...field}
-							{...props}
-							className={inputStyle({
-								hasError: error !== undefined && touched,
-							})}
-						/>
+						<Input id={id} {...field} {...props} hasError={error !== undefined && touched} />
 
 						{error !== undefined && touched && (
 							<div css={tw`absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none`}>
