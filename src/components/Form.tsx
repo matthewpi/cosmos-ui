@@ -38,7 +38,7 @@ const Input = styled.input({
 				'&::placeholder': tw`text-red-300`,
 			},
 			false: {
-				...tw`text-gray-400 border-gray-300`,
+				...tw`border-gray-300`,
 				'&::placeholder': tw`text-gray-400`,
 			},
 		},
