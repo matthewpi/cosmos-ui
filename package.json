@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@headlessui/react": "^1.4.0",
 		"@heroicons/react": "^1.0.4",
-		"@stitches/react": "1.0.0-canary.11",
+		"@stitches/react": "1.0.0-canary.12",
 		"easy-peasy": "^5.0.3",
 		"formik": "^2.2.9",
 		"history": "^5.0.1",

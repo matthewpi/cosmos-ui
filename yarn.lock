@@ -600,7 +600,7 @@ __metadata:
     "@cypress/react": ^5.9.4
     "@headlessui/react": ^1.4.0
     "@heroicons/react": ^1.0.4
-    "@stitches/react": 1.0.0-canary.11
+    "@stitches/react": 1.0.0-canary.12
     "@tailwindcss/aspect-ratio": ^0.2.1
     "@tailwindcss/forms": ^0.3.3
     "@tailwindcss/typography": ^0.4.1
@@ -693,12 +693,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:1.0.0-canary.11":
-  version: 1.0.0-canary.11
-  resolution: "@stitches/react@npm:1.0.0-canary.11"
+"@stitches/react@npm:1.0.0-canary.12":
+  version: 1.0.0-canary.12
+  resolution: "@stitches/react@npm:1.0.0-canary.12"
   peerDependencies:
     react: ">= 16.3.0"
-  checksum: 8b4ff84547f716e1d635a55b9c465a059b6130eac4556420e06840be22879e13be5a887e02f08a83ce201a71c6770b29e446f61bf9fee56bde78d0b762d2be0b
+  checksum: c7f2fc47bf6cdf85c11c02d37a0df4958fd8c638abf4e0482d3a4d160ef495d816dfd43dc337c3a6bd9c3e41cddba88fce9ae5507c328283c2a4e110e568ae4f
   languageName: node
   linkType: hard
 
