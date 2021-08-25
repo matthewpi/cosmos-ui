@@ -23,8 +23,8 @@
 dependency-reduced-pom.xml
 
 # Node.js
-/.npm
-/node_modules
+.npm
+node_modules
 npm-debug.log
 
 .cache
@@ -65,10 +65,3 @@ yarn-error.log
 
 # VIM
 .*.sw[a-p]
-
-#-------------------#
-#   Project Files   #
-#-------------------#
-
-/.logs
-/dist

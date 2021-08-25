@@ -16,6 +16,9 @@ extends:
   - plugin:react/recommended
   - plugin:@typescript-eslint/recommended
   - prettier
+settings:
+  react:
+    version: "17"
 rules:
   array-bracket-spacing:
     - warn
@@ -77,15 +80,6 @@ rules:
   no-use-before-define: 0
   "@typescript-eslint/no-use-before-define":
     - warn
-# settings:
-#   react:
-#     pragma: React
-#     version: detect
-#   linkComponents:
-#     - name: Link
-#       linkAttribute: to
-#     - name: NavLink
-#       linkAttribute: to
 overrides:
   - files:
       - "**/*.tsx"
