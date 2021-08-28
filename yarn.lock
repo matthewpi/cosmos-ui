@@ -391,13 +391,13 @@ __metadata:
     "@babel/core": ^7.15.0
     "@headlessui/react": ^1.4.0
     "@heroicons/react": ^1.0.4
-    "@stitches/react": 1.0.0-canary.17
+    "@stitches/react": 1.0.0-canary.18
     "@tailwindcss/aspect-ratio": ^0.2.1
     "@tailwindcss/forms": ^0.3.3
     "@tailwindcss/typography": ^0.4.1
     "@types/history": ^4.7.9
     "@types/mocha": ^9.0.0
-    "@types/node": ^16.7.2
+    "@types/node": ^16.7.4
     "@types/react": ^17.0.19
     "@types/react-dom": ^17.0.9
     "@types/react-transition-group": ^4.4.2
@@ -412,7 +412,7 @@ __metadata:
     react-dom: ^17.0.2
     react-router-dom: 6.0.0-beta.2
     react-transition-group: ^4.4.2
-    swr: ^0.5.6
+    swr: ^1.0.0
     tailwindcss: ^2.2.7
     twin.macro: ^2.7.0
     vite: ^2.5.1
@@ -426,7 +426,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/monorepo@workspace:."
   dependencies:
-    "@types/node": ^16.7.2
+    "@types/node": ^16.7.4
     "@typescript-eslint/eslint-plugin": ^4.29.3
     "@typescript-eslint/parser": ^4.29.3
     eslint: ^7.32.0
@@ -492,12 +492,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:1.0.0-canary.17":
-  version: 1.0.0-canary.17
-  resolution: "@stitches/react@npm:1.0.0-canary.17"
+"@stitches/react@npm:1.0.0-canary.18":
+  version: 1.0.0-canary.18
+  resolution: "@stitches/react@npm:1.0.0-canary.18"
   peerDependencies:
     react: ">= 16.3.0"
-  checksum: d98ef6343b86fa47acca732ef09d461fff7f82b744832a4f7eb7d736a953d3598e2f3d36a92215f8a0be0b0e7e0928f0ebd6fc0b6dddfd63f16c41f871b9debc
+  checksum: 0161afec438fbab376ad983943d79d1111259bf4ae80311adc78c1a30a633f6fc4742c8e9efdba83ff7f4247332d32e1ce441fe5ee7c770437299d5213272d5e
   languageName: node
   linkType: hard
 
@@ -618,10 +618,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.7.2":
-  version: 16.7.2
-  resolution: "@types/node@npm:16.7.2"
-  checksum: aef77c109e2fd93b5dc6ec0a57a0878aaaa58adf0e63d9618d67b116ad3f2a3eb2589a99deaf9fda4a0805068b2533e3d2cf8e8dc3572251c498ec3dc929a76c
+"@types/node@npm:^16.7.4":
+  version: 16.7.4
+  resolution: "@types/node@npm:16.7.4"
+  checksum: da7813e6c37e7813645a9d40de6d9f803fbadb2975748d307ec31d8e4f9baabccf49b667a39e4b1288d477ec7d34a339e8a41d8703a1d7ab0ec8eb2516073f27
   languageName: node
   linkType: hard
 
@@ -4315,14 +4315,14 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swr@npm:^0.5.6":
-  version: 0.5.7
-  resolution: "swr@npm:0.5.7"
+"swr@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "swr@npm:1.0.0"
   dependencies:
     dequal: 2.0.2
   peerDependencies:
     react: ^16.11.0 || ^17.0.0
-  checksum: 1bbc7fb107565cdfa2d15d5e14cd51cac9e4087ba08d4557aedf69552186ec4eb57aeb9dc6e3021e23b2ad3638b56e392b86f95518a000842797d10e89f2405e
+  checksum: 8ffb767ca5c2f0d5e2280d31a6f497fac2739cf7c3518b0266b8d5c619ea9a74b1953b82e13b47463f6dd4f122885f941ce785b2fbf4d45e4b2e1d88f62b9c74
   languageName: node
   linkType: hard
 
