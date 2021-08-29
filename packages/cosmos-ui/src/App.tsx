@@ -1,3 +1,4 @@
+import Stitches from '@stitches/react/types/stitches';
 import { StoreProvider } from 'easy-peasy';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import tw, { globalStyles } from 'twin.macro';
@@ -14,8 +15,7 @@ export function NotFound(): JSX.Element {
 }
 
 const globals = () => {
-	// @ts-ignore
-	globalCss(globalStyles)();
+	globalCss(globalStyles as unknown as Stitches['globalCss'])();
 
 	globalCss({
 		'@font-face': [

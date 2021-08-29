@@ -30,7 +30,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.0, @babel/core@npm:^7.13.8, @babel/core@npm:^7.14.8, @babel/core@npm:^7.15.0":
+"@babel/core@npm:7.15.0, @babel/core@npm:^7.13.8, @babel/core@npm:^7.14.8":
   version: 7.15.0
   resolution: "@babel/core@npm:7.15.0"
   dependencies:
@@ -347,7 +347,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:^1.4.0":
+"@headlessui/react@npm:1.4.0":
   version: 1.4.0
   resolution: "@headlessui/react@npm:1.4.0"
   peerDependencies:
@@ -357,7 +357,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:^1.0.4":
+"@heroicons/react@npm:1.0.4":
   version: 1.0.4
   resolution: "@heroicons/react@npm:1.0.4"
   peerDependencies:
@@ -388,36 +388,36 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/cosmos-ui@workspace:packages/cosmos-ui"
   dependencies:
-    "@babel/core": ^7.15.0
-    "@headlessui/react": ^1.4.0
-    "@heroicons/react": ^1.0.4
+    "@babel/core": 7.15.0
+    "@headlessui/react": 1.4.0
+    "@heroicons/react": 1.0.4
     "@stitches/react": 1.0.0-canary.18
-    "@tailwindcss/aspect-ratio": ^0.2.1
-    "@tailwindcss/forms": ^0.3.3
-    "@tailwindcss/typography": ^0.4.1
-    "@types/history": ^4.7.9
-    "@types/mocha": ^9.0.0
-    "@types/node": ^16.7.4
-    "@types/react": ^17.0.19
-    "@types/react-dom": ^17.0.9
-    "@types/react-transition-group": ^4.4.2
-    "@types/yup": ^0.29.13
-    "@vitejs/plugin-react-refresh": ^1.3.6
-    autoprefixer: ^10.3.3
-    easy-peasy: ^5.0.3
-    formik: ^2.2.9
-    history: ^5.0.1
-    postcss: ^8.3.6
-    react: ^17.0.2
-    react-dom: ^17.0.2
+    "@tailwindcss/aspect-ratio": 0.2.1
+    "@tailwindcss/forms": 0.3.3
+    "@tailwindcss/typography": 0.4.1
+    "@types/history": 4.7.9
+    "@types/mocha": 9.0.0
+    "@types/node": 16.7.6
+    "@types/react": 17.0.19
+    "@types/react-dom": 17.0.9
+    "@types/react-transition-group": 4.4.2
+    "@types/yup": 0.29.13
+    "@vitejs/plugin-react-refresh": 1.3.6
+    autoprefixer: 10.3.3
+    easy-peasy: 5.0.3
+    formik: 2.2.9
+    history: 5.0.1
+    postcss: 8.3.6
+    react: 17.0.2
+    react-dom: 17.0.2
     react-router-dom: 6.0.0-beta.2
-    react-transition-group: ^4.4.2
-    swr: ^1.0.0
-    tailwindcss: ^2.2.7
-    twin.macro: ^2.7.0
-    vite: ^2.5.1
-    vite-plugin-babel-macros: ^1.0.5
-    yup: ^0.32.9
+    react-transition-group: 4.4.2
+    swr: 1.0.0
+    tailwindcss: 2.2.7
+    twin.macro: 2.7.0
+    vite: 2.5.1
+    vite-plugin-babel-macros: 1.0.5
+    yup: 0.32.9
     ~: "link:./src"
   languageName: unknown
   linkType: soft
@@ -426,22 +426,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/monorepo@workspace:."
   dependencies:
-    "@types/node": ^16.7.4
-    "@typescript-eslint/eslint-plugin": ^4.29.3
-    "@typescript-eslint/parser": ^4.29.3
-    eslint: ^7.32.0
-    eslint-config-prettier: ^8.3.0
-    eslint-config-standard: ^16.0.3
-    eslint-import-resolver-node: ^0.3.6
-    eslint-plugin-import: ^2.24.2
-    eslint-plugin-node: ^11.1.0
-    eslint-plugin-promise: ^5.1.0
-    eslint-plugin-react: ^7.24.0
-    eslint-plugin-react-hooks: ^4.2.0
-    eslint-plugin-simple-import-sort: ^7.0.0
-    husky: ^7.0.2
-    prettier: ^2.3.2
-    typescript: ^4.4.2
+    "@types/node": 16.7.6
+    "@typescript-eslint/eslint-plugin": 4.29.3
+    "@typescript-eslint/parser": 4.29.3
+    eslint: 7.32.0
+    eslint-config-prettier: 8.3.0
+    eslint-config-standard: 16.0.3
+    eslint-import-resolver-node: 0.3.6
+    eslint-plugin-import: 2.24.2
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-promise: 5.1.0
+    eslint-plugin-react: 7.25.0
+    eslint-plugin-react-hooks: 4.2.0
+    eslint-plugin-simple-import-sort: 7.0.0
+    husky: 7.0.2
+    prettier: 2.3.2
+    typescript: 4.3.5
   languageName: unknown
   linkType: soft
 
@@ -501,7 +501,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/aspect-ratio@npm:^0.2.1":
+"@tailwindcss/aspect-ratio@npm:0.2.1":
   version: 0.2.1
   resolution: "@tailwindcss/aspect-ratio@npm:0.2.1"
   peerDependencies:
@@ -510,7 +510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/forms@npm:^0.3.3":
+"@tailwindcss/forms@npm:0.3.3":
   version: 0.3.3
   resolution: "@tailwindcss/forms@npm:0.3.3"
   dependencies:
@@ -521,7 +521,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:^0.4.1":
+"@tailwindcss/typography@npm:0.4.1":
   version: 0.4.1
   resolution: "@tailwindcss/typography@npm:0.4.1"
   dependencies:
@@ -583,7 +583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/history@npm:^4.7.9":
+"@types/history@npm:4.7.9":
   version: 4.7.9
   resolution: "@types/history@npm:4.7.9"
   checksum: 556b062adb92795839301965776b0418e9ca32798bd8a6031345a6a84d7512771107143a497b7e3ff826d0b0d4456e962c6450485dda6f55c7dd33371e840529
@@ -611,17 +611,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mocha@npm:^9.0.0":
+"@types/mocha@npm:9.0.0":
   version: 9.0.0
   resolution: "@types/mocha@npm:9.0.0"
   checksum: 73e6edaba045bc250b69085a770d5029edfed006ed8e75344435474a2cb8d38064acd7b34b6cc62756caa845a5cf335bde66db11e8c8c6565c62a790e933704a
   languageName: node
   linkType: hard
 
-"@types/node@npm:^16.7.4":
-  version: 16.7.4
-  resolution: "@types/node@npm:16.7.4"
-  checksum: da7813e6c37e7813645a9d40de6d9f803fbadb2975748d307ec31d8e4f9baabccf49b667a39e4b1288d477ec7d34a339e8a41d8703a1d7ab0ec8eb2516073f27
+"@types/node@npm:16.7.6":
+  version: 16.7.6
+  resolution: "@types/node@npm:16.7.6"
+  checksum: a8533386a1d4ca0ed67885413001af8789c63948df288f3d36e31bd8fccffacf5dffb95e190c8cd57bb40385f010fb9a30f596bad6bb26b2bb88737d54d8ed95
   languageName: node
   linkType: hard
 
@@ -639,7 +639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^17.0.9":
+"@types/react-dom@npm:17.0.9":
   version: 17.0.9
   resolution: "@types/react-dom@npm:17.0.9"
   dependencies:
@@ -648,7 +648,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-transition-group@npm:^4.4.2":
+"@types/react-transition-group@npm:4.4.2":
   version: 4.4.2
   resolution: "@types/react-transition-group@npm:4.4.2"
   dependencies:
@@ -657,7 +657,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.19":
+"@types/react@npm:*, @types/react@npm:17.0.19":
   version: 17.0.19
   resolution: "@types/react@npm:17.0.19"
   dependencies:
@@ -675,14 +675,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/yup@npm:^0.29.13":
+"@types/yup@npm:0.29.13":
   version: 0.29.13
   resolution: "@types/yup@npm:0.29.13"
   checksum: 042eb51becd38559d0d7c86a40e0118d84d2b071c926999ec7721cbef759673be290d69b35ca7985db1bbb6d97544a2db20bb7cacbdaf827391bdd199e3789f9
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.29.3":
+"@typescript-eslint/eslint-plugin@npm:4.29.3":
   version: 4.29.3
   resolution: "@typescript-eslint/eslint-plugin@npm:4.29.3"
   dependencies:
@@ -719,7 +719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.29.3":
+"@typescript-eslint/parser@npm:4.29.3":
   version: 4.29.3
   resolution: "@typescript-eslint/parser@npm:4.29.3"
   dependencies:
@@ -781,7 +781,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-react-refresh@npm:^1.3.6":
+"@vitejs/plugin-react-refresh@npm:1.3.6":
   version: 1.3.6
   resolution: "@vitejs/plugin-react-refresh@npm:1.3.6"
   dependencies:
@@ -1030,6 +1030,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"autoprefixer@npm:10.3.3":
+  version: 10.3.3
+  resolution: "autoprefixer@npm:10.3.3"
+  dependencies:
+    browserslist: ^4.16.8
+    caniuse-lite: ^1.0.30001252
+    colorette: ^1.3.0
+    fraction.js: ^4.1.1
+    normalize-range: ^0.1.2
+    postcss-value-parser: ^4.1.0
+  peerDependencies:
+    postcss: ^8.1.0
+  bin:
+    autoprefixer: bin/autoprefixer
+  checksum: 1dcfa0e8403e185ce1f9415e5857eb0fe220335133b2e1b872a0ee79a9cd86083395a2d3b409323d79ce4e322652e106b7b54b0794195910f3de3f5395afaf79
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:^10.2.5":
   version: 10.3.2
   resolution: "autoprefixer@npm:10.3.2"
@@ -1045,24 +1063,6 @@ __metadata:
   bin:
     autoprefixer: bin/autoprefixer
   checksum: e173e2caec5defc104090b639114038cde401c4d703c618e0eb829dc5f84585486c7ad69175aa27815a78cfd35e27dc74412b63c1a810f614f1db4ac9852c423
-  languageName: node
-  linkType: hard
-
-"autoprefixer@npm:^10.3.3":
-  version: 10.3.3
-  resolution: "autoprefixer@npm:10.3.3"
-  dependencies:
-    browserslist: ^4.16.8
-    caniuse-lite: ^1.0.30001252
-    colorette: ^1.3.0
-    fraction.js: ^4.1.1
-    normalize-range: ^0.1.2
-    postcss-value-parser: ^4.1.0
-  peerDependencies:
-    postcss: ^8.1.0
-  bin:
-    autoprefixer: bin/autoprefixer
-  checksum: 1dcfa0e8403e185ce1f9415e5857eb0fe220335133b2e1b872a0ee79a9cd86083395a2d3b409323d79ce4e322652e106b7b54b0794195910f3de3f5395afaf79
   languageName: node
   linkType: hard
 
@@ -1574,7 +1574,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"easy-peasy@npm:^5.0.3":
+"easy-peasy@npm:5.0.3":
   version: 5.0.3
   resolution: "easy-peasy@npm:5.0.3"
   dependencies:
@@ -1710,7 +1710,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
+"eslint-config-prettier@npm:8.3.0":
   version: 8.3.0
   resolution: "eslint-config-prettier@npm:8.3.0"
   peerDependencies:
@@ -1721,7 +1721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-standard@npm:^16.0.3":
+"eslint-config-standard@npm:16.0.3":
   version: 16.0.3
   resolution: "eslint-config-standard@npm:16.0.3"
   peerDependencies:
@@ -1733,7 +1733,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-import-resolver-node@npm:^0.3.6":
+"eslint-import-resolver-node@npm:0.3.6, eslint-import-resolver-node@npm:^0.3.6":
   version: 0.3.6
   resolution: "eslint-import-resolver-node@npm:0.3.6"
   dependencies:
@@ -1765,7 +1765,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.24.2":
+"eslint-plugin-import@npm:2.24.2":
   version: 2.24.2
   resolution: "eslint-plugin-import@npm:2.24.2"
   dependencies:
@@ -1790,7 +1790,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-node@npm:^11.1.0":
+"eslint-plugin-node@npm:11.1.0":
   version: 11.1.0
   resolution: "eslint-plugin-node@npm:11.1.0"
   dependencies:
@@ -1806,7 +1806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-promise@npm:^5.1.0":
+"eslint-plugin-promise@npm:5.1.0":
   version: 5.1.0
   resolution: "eslint-plugin-promise@npm:5.1.0"
   peerDependencies:
@@ -1815,7 +1815,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^4.2.0":
+"eslint-plugin-react-hooks@npm:4.2.0":
   version: 4.2.0
   resolution: "eslint-plugin-react-hooks@npm:4.2.0"
   peerDependencies:
@@ -1824,13 +1824,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.24.0":
-  version: 7.24.0
-  resolution: "eslint-plugin-react@npm:7.24.0"
+"eslint-plugin-react@npm:7.25.0":
+  version: 7.25.0
+  resolution: "eslint-plugin-react@npm:7.25.0"
   dependencies:
     array-includes: ^3.1.3
     array.prototype.flatmap: ^1.2.4
     doctrine: ^2.1.0
+    estraverse: ^5.2.0
     has: ^1.0.3
     jsx-ast-utils: ^2.4.1 || ^3.0.0
     minimatch: ^3.0.4
@@ -1842,11 +1843,11 @@ __metadata:
     string.prototype.matchall: ^4.0.5
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7
-  checksum: bf844f98d93f3617fbd03df4be4f4c9e8e49ea035678762b73a28df730e9518d5ac636293f6326b41b4a0678f9dfa059ce559f6652c7a2d914d477ec3a389619
+  checksum: f4332c2b33e4cb7b3896da63ee8b786c45196524f7da8e06594abb4b2641f9b52d7a4ccf830e5ade73d67aae78ac9d8fb2d1bf33de3e522b4a20a75edb8806b9
   languageName: node
   linkType: hard
 
-"eslint-plugin-simple-import-sort@npm:^7.0.0":
+"eslint-plugin-simple-import-sort@npm:7.0.0":
   version: 7.0.0
   resolution: "eslint-plugin-simple-import-sort@npm:7.0.0"
   peerDependencies:
@@ -1899,7 +1900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^7.32.0":
+"eslint@npm:7.32.0":
   version: 7.32.0
   resolution: "eslint@npm:7.32.0"
   dependencies:
@@ -2116,7 +2117,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formik@npm:^2.2.9":
+"formik@npm:2.2.9":
   version: 2.2.9
   resolution: "formik@npm:2.2.9"
   dependencies:
@@ -2355,7 +2356,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"history@npm:^5.0.1":
+"history@npm:5.0.1":
   version: 5.0.1
   resolution: "history@npm:5.0.1"
   dependencies:
@@ -2424,7 +2425,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"husky@npm:^7.0.2":
+"husky@npm:7.0.2":
   version: 7.0.2
   resolution: "husky@npm:7.0.2"
   bin:
@@ -3555,7 +3556,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.6, postcss@npm:^8.1.8, postcss@npm:^8.2.1, postcss@npm:^8.3.6":
+"postcss@npm:8.3.6, postcss@npm:^8.1.6, postcss@npm:^8.1.8, postcss@npm:^8.2.1, postcss@npm:^8.3.6":
   version: 8.3.6
   resolution: "postcss@npm:8.3.6"
   dependencies:
@@ -3573,7 +3574,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier@npm:2.3.2":
   version: 2.3.2
   resolution: "prettier@npm:2.3.2"
   bin:
@@ -3673,7 +3674,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -3730,7 +3731,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-transition-group@npm:^4.4.2":
+"react-transition-group@npm:4.4.2":
   version: 4.4.2
   resolution: "react-transition-group@npm:4.4.2"
   dependencies:
@@ -3745,7 +3746,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
@@ -4315,7 +4316,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swr@npm:^1.0.0":
+"swr@npm:1.0.0":
   version: 1.0.0
   resolution: "swr@npm:1.0.0"
   dependencies:
@@ -4340,7 +4341,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:^2.2.7":
+"tailwindcss@npm:2.2.7, tailwindcss@npm:^2.2.7":
   version: 2.2.7
   resolution: "tailwindcss@npm:2.2.7"
   dependencies:
@@ -4496,7 +4497,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"twin.macro@npm:^2.7.0":
+"twin.macro@npm:2.7.0":
   version: 2.7.0
   resolution: "twin.macro@npm:2.7.0"
   dependencies:
@@ -4535,23 +4536,23 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-typescript@^4.4.2:
-  version: 4.4.2
-  resolution: "typescript@npm:4.4.2"
+typescript@4.3.5:
+  version: 4.3.5
+  resolution: "typescript@npm:4.3.5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 194e08e9d1971d667d6fd1a0554616b7022312a2319d70e81a64e502a265992061ee7817ed9a69b52bbabe7a9b85e7938cb8c11c433e40a516b277f8c4dacd51
+  checksum: bab033b5e2b0790dd35b77fd005df976ef80b8d84fd2c6e63cc31808151875beae9216e5a315fe7068e8499905c3c354248fe83272cdfc13b7705635f0c66c97
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.4.2#~builtin<compat/typescript>":
-  version: 4.4.2
-  resolution: "typescript@patch:typescript@npm%3A4.4.2#~builtin<compat/typescript>::version=4.4.2&hash=6454cb"
+"typescript@patch:typescript@4.3.5#~builtin<compat/typescript>":
+  version: 4.3.5
+  resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=6454cb"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 07a2a47703d6ec22af1f3dde7dbaef2674c8c8b7aee8a69534199554dce71cbbbd4171b852e82272d5531c96714d95a517215b05278638fe0ad40d72fcf9b959
+  checksum: b8099b821a3ca7d902b330ae0a8e7a484501638ae0fafe6eccba95fdd6cd90c75dedaff9ab876c08d4fcfc57c49183f814d44a176d07aab9bfe02b4c91532f95
   languageName: node
   linkType: hard
 
@@ -4625,7 +4626,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"vite-plugin-babel-macros@npm:^1.0.5":
+"vite-plugin-babel-macros@npm:1.0.5":
   version: 1.0.5
   resolution: "vite-plugin-babel-macros@npm:1.0.5"
   dependencies:
@@ -4641,7 +4642,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"vite@npm:^2.5.1":
+"vite@npm:2.5.1":
   version: 2.5.1
   resolution: "vite@npm:2.5.1"
   dependencies:
@@ -4727,7 +4728,7 @@ typescript@^4.4.2:
   languageName: node
   linkType: hard
 
-"yup@npm:^0.32.9":
+"yup@npm:0.32.9":
   version: 0.32.9
   resolution: "yup@npm:0.32.9"
   dependencies:
