@@ -397,7 +397,7 @@ __metadata:
     "@tailwindcss/typography": 0.4.1
     "@types/history": 4.7.9
     "@types/mocha": 9.0.0
-    "@types/node": 16.7.9
+    "@types/node": 16.7.10
     "@types/react": 17.0.19
     "@types/react-dom": 17.0.9
     "@types/react-transition-group": 4.4.2
@@ -415,7 +415,7 @@ __metadata:
     swr: 1.0.0
     tailwindcss: 2.2.7
     twin.macro: 2.7.0
-    vite: 2.5.2
+    vite: 2.5.3
     vite-plugin-babel-macros: 1.0.5
     yup: 0.32.9
     ~: "link:./src"
@@ -426,7 +426,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/monorepo@workspace:."
   dependencies:
-    "@types/node": 16.7.9
+    "@types/node": 16.7.10
     "@typescript-eslint/eslint-plugin": 4.30.0
     "@typescript-eslint/parser": 4.30.0
     eslint: 7.32.0
@@ -618,10 +618,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.7.9":
-  version: 16.7.9
-  resolution: "@types/node@npm:16.7.9"
-  checksum: dd8970adbb82a188c4b253df8303b9e4e5e3423ff8c35243b240bb448b056a2723f58fe17228e4bcb1b1f98b3f37108c0bdfda7efd88ed839e098502cf73992f
+"@types/node@npm:16.7.10":
+  version: 16.7.10
+  resolution: "@types/node@npm:16.7.10"
+  checksum: 0518803caa1a14f4070e770a280eda1c4b4581a425cbda481cdd54b1f34a7ea497ff067fd23b90e3d4f4fdcfba15c1316182875e9cf9f5b2e880de1e595de053
   languageName: node
   linkType: hard
 
@@ -4642,9 +4642,9 @@ typescript@4.3.5:
   languageName: node
   linkType: hard
 
-"vite@npm:2.5.2":
-  version: 2.5.2
-  resolution: "vite@npm:2.5.2"
+"vite@npm:2.5.3":
+  version: 2.5.3
+  resolution: "vite@npm:2.5.3"
   dependencies:
     esbuild: ^0.12.17
     fsevents: ~2.3.2
@@ -4656,7 +4656,7 @@ typescript@4.3.5:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: ba328352374c6c78eb03b6d3df9a692a73f2e360a2fc19ecb04a1158834670983e7e7bc730d438a0b223ad35bfd1cc5b26453975d51798b6c13a98ec8fd1a84c
+  checksum: 118beba819a72af9d7ccf674583837d44794a08694f3a99ee5760add9e8df221d3db36f430db5e88d43fd4b094e213aa0d09998aef91b861e17ed0544b8a1864
   languageName: node
   linkType: hard
 
