@@ -53,16 +53,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:7.15.4":
-  version: 7.15.4
-  resolution: "@babel/core@npm:7.15.4"
+"@babel/core@npm:7.15.5":
+  version: 7.15.5
+  resolution: "@babel/core@npm:7.15.5"
   dependencies:
     "@babel/code-frame": ^7.14.5
     "@babel/generator": ^7.15.4
     "@babel/helper-compilation-targets": ^7.15.4
     "@babel/helper-module-transforms": ^7.15.4
     "@babel/helpers": ^7.15.4
-    "@babel/parser": ^7.15.4
+    "@babel/parser": ^7.15.5
     "@babel/template": ^7.15.4
     "@babel/traverse": ^7.15.4
     "@babel/types": ^7.15.4
@@ -72,7 +72,7 @@ __metadata:
     json5: ^2.1.2
     semver: ^6.3.0
     source-map: ^0.5.0
-  checksum: fdd7db84b26e06da329a49ba9bad542113982bd3c5b8f822087859f2d7248b21c44d488cb26fa8bec96e1d206c4e4b34809e54b447ff38f5bd7a6a04a9ad0c44
+  checksum: 8121bf74040d98562b773c1e92a174cd53c99a5158ae5a9ef25645ed35d6f821c64155e394cdb04e7dc77a0871ba42a638f6703b2c44a75bc04564b21cad9e1b
   languageName: node
   linkType: hard
 
@@ -409,6 +409,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/parser@npm:^7.15.5":
+  version: 7.15.5
+  resolution: "@babel/parser@npm:7.15.5"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: abc39a66b9bf6c861e25b07ad99830c4da6ce345135ebe08ee81a0e8d2f62cddc5f1fd825885fcd609a41b59531c856083d880f7836bd89c148136f834dfc3fe
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-jsx@npm:^7.12.13":
   version: 7.14.5
   resolution: "@babel/plugin-syntax-jsx@npm:7.14.5"
@@ -596,7 +605,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/cosmos-ui@workspace:packages/cosmos-ui"
   dependencies:
-    "@babel/core": 7.15.4
+    "@babel/core": 7.15.5
     "@headlessui/react": 1.4.1
     "@heroicons/react": 1.0.4
     "@stitches/react": 1.0.0
@@ -606,7 +615,7 @@ __metadata:
     "@types/history": 4.7.9
     "@types/mocha": 9.0.0
     "@types/node": 16.7.10
-    "@types/react": 17.0.19
+    "@types/react": 17.0.20
     "@types/react-dom": 17.0.9
     "@types/react-transition-group": 4.4.2
     "@types/yup": 0.29.13
@@ -865,7 +874,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:17.0.19":
+"@types/react@npm:*":
   version: 17.0.19
   resolution: "@types/react@npm:17.0.19"
   dependencies:
@@ -873,6 +882,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: d5af52623dd863e5a9f64eb72979f19c21e03012e25ee93adc93f664ed7976e81b654128dc653b225ad5ba2aaae24e0febe37face272bb051d6289e23ed7177d
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:17.0.20":
+  version: 17.0.20
+  resolution: "@types/react@npm:17.0.20"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e342bfaa4fe052fc3a445ea49f746f3fd82cfc9c8028eae139a3e0763ead1871f353bd40da2a472f23d2b52544d2781d40e3159c0703e7e2ff08c13f067a3b9c
   languageName: node
   linkType: hard
 
