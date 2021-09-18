@@ -9,7 +9,7 @@
 	"dependencies": {
 		"@headlessui/react": "1.4.1",
 		"@heroicons/react": "1.0.4",
-		"@stitches/react": "1.1.0",
+		"@stitches/react": "1.2.0",
 		"easy-peasy": "5.0.3",
 		"formik": "2.2.9",
 		"history": "5.0.1",

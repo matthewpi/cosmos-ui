@@ -1,5 +1,5 @@
 import { ExclamationCircleIcon } from '@heroicons/react/solid';
-import { Field as FField, FieldProps as FFieldProps, Form as FForm, Formik, FormikHelpers } from 'formik';
+import { Field as FField, FieldProps as FFieldProps, Form as FormikForm, Formik, FormikHelpers } from 'formik';
 import { forwardRef, ReactNode } from 'react';
 import tw, { styled } from 'twin.macro';
 
@@ -15,7 +15,7 @@ interface FormProps<T> {
 export function Form<T>({ initialValues, validationSchema, onSubmit, className, children }: FormProps<T>): JSX.Element {
 	return (
 		<Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-			<FForm className={className}>{children}</FForm>
+			<FormikForm className={className}>{children}</FormikForm>
 		</Formik>
 	);
 }

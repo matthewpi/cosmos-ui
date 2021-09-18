@@ -608,7 +608,7 @@ __metadata:
     "@babel/core": 7.15.5
     "@headlessui/react": 1.4.1
     "@heroicons/react": 1.0.4
-    "@stitches/react": 1.1.0
+    "@stitches/react": 1.2.0
     "@tailwindcss/aspect-ratio": 0.2.1
     "@tailwindcss/forms": 0.3.3
     "@tailwindcss/typography": 0.4.1
@@ -709,12 +709,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stitches/react@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@stitches/react@npm:1.1.0"
+"@stitches/react@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@stitches/react@npm:1.2.0"
   peerDependencies:
     react: ">= 16.3.0"
-  checksum: 301d194a8af3dc75759e6a0cc5ce93038d67f46136b89161821a9f1fb4c4a54d6863309e71eb0c2c5044e835348036ac31205f24b92f6d71e6988f2a34b089a8
+  checksum: c791a9a7917f744483df9acc7b35f8898b96651a3422a163e68ff3314273ffaf38b7faa11101c3217668f7bcf4ec27acc7a144f5948d271cfd27f46b0adb3761
   languageName: node
   linkType: hard
 
