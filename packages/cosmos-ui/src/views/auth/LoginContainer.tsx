@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import { object, string } from 'yup';
 
-import { Field, Form } from '~/components/Form';
+import { Form, InputField } from '~/components/Form';
 
 interface Values {
 	email: string;
@@ -38,7 +38,7 @@ export function LoginContainer(): JSX.Element {
 						validationSchema={validationSchema}
 						onSubmit={onSubmit}
 					>
-						<Field
+						<InputField
 							id="email"
 							name="email"
 							type="email"
@@ -47,7 +47,7 @@ export function LoginContainer(): JSX.Element {
 							placeholder="Email address"
 						/>
 
-						<Field
+						<InputField
 							id="password"
 							name="password"
 							type="password"

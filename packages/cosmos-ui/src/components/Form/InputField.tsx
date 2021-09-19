@@ -1,33 +1,9 @@
 import { ExclamationCircleIcon } from '@heroicons/react/solid';
-import { Field as FField, FieldProps as FFieldProps, Form as FormikForm, Formik, FormikHelpers } from 'formik';
-import { forwardRef, ReactNode } from 'react';
+import { Field as FField, FieldProps as FFieldProps } from 'formik';
+import { forwardRef } from 'react';
 import tw, { styled } from 'twin.macro';
 
-interface FormProps<T> {
-	initialValues: T;
-	validationSchema?: any | (() => any);
-	onSubmit: (values: T, formikHelpers: FormikHelpers<T>) => void | Promise<any>;
-
-	className?: string;
-	children: ReactNode;
-}
-
-export function Form<T>({ initialValues, validationSchema, onSubmit, className, children }: FormProps<T>): JSX.Element {
-	return (
-		<Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={onSubmit}>
-			<FormikForm className={className}>{children}</FormikForm>
-		</Formik>
-	);
-}
-
-const FieldWrapper = styled.div({
-	...tw`relative`,
-	variants: {
-		hasLabel: {
-			true: tw`mt-1`,
-		},
-	},
-});
+import { FieldWrapper } from '~/components/Form/Field';
 
 const Input = styled.input({
 	...tw`block w-full px-3 py-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`,
@@ -54,7 +30,7 @@ interface fieldProps {
 
 type FieldProps = fieldProps & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'>;
 
-export const Field = forwardRef<HTMLInputElement, FieldProps>(function Field(
+export const InputField = forwardRef<HTMLInputElement, FieldProps>(function Field(
 	{ id, name, label, showLabel, description, ...props },
 	ref,
 ) {
@@ -73,7 +49,7 @@ export const Field = forwardRef<HTMLInputElement, FieldProps>(function Field(
 
 						{error !== undefined && touched && (
 							<div css={tw`absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none`}>
-								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-500`} aria-hidden="true" />
+								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-500`} aria-Hidden="true" />
 							</div>
 						)}
 					</FieldWrapper>
