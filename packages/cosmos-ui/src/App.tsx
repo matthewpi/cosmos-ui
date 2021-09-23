@@ -15,7 +15,7 @@ export function NotFound(): JSX.Element {
 }
 
 const globals = () => {
-	globalCss(globalStyles as unknown as Stitches['globalCss'])();
+	globalCss({ ...(globalStyles as unknown as Stitches['globalCss']) })();
 
 	globalCss({
 		'@font-face': [
