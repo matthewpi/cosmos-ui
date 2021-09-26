@@ -49,7 +49,7 @@ export const InputField = forwardRef<HTMLInputElement, FieldProps>(function Fiel
 
 						{error !== undefined && touched && (
 							<div css={tw`absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none`}>
-								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-500`} aria-Hidden="true" />
+								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-500`} aria-hidden="true" />
 							</div>
 						)}
 					</FieldWrapper>
