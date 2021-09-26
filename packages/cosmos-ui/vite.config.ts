@@ -1,7 +1,6 @@
-import reactRefresh from '@vitejs/plugin-react-refresh';
+import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
-import macrosPlugin from 'vite-plugin-babel-macros';
 
 export default defineConfig({
 	base: '/',
@@ -12,7 +11,13 @@ export default defineConfig({
 		sourcemap: true,
 	},
 
-	plugins: [reactRefresh(), macrosPlugin()],
+	plugins: [
+		react({
+			babel: {
+				plugins: ['babel-plugin-macros'],
+			},
+		}),
+	],
 
 	resolve: {
 		alias: {
@@ -22,9 +27,5 @@ export default defineConfig({
 
 	define: {
 		'process.env': {},
-	},
-
-	esbuild: {
-		jsxInject: "import React from 'react'",
 	},
 });
