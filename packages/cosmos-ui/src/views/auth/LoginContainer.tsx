@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import { object, string } from 'yup';
 
+import Logo from '~/assets/logo.svg';
 import { Form, InputField } from '~/components/Form';
 
 interface Values {
@@ -27,7 +28,7 @@ export function LoginContainer(): JSX.Element {
 	return (
 		<div css={tw`flex flex-col justify-center min-h-screen py-12 bg-grey-2 sm:px-6 lg:px-8`}>
 			<div css={tw`sm:mx-auto sm:w-full sm:max-w-md`}>
-				<img css={tw`w-auto h-12 mx-auto`} src="/logo.svg" alt="Workflow" />
+				<img src={Logo} alt="Workflow" css={tw`w-auto h-12 mx-auto`} />
 			</div>
 
 			<div css={tw`mt-10 sm:mx-auto sm:w-full sm:max-w-md`}>
