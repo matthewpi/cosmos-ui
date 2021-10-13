@@ -8,10 +8,10 @@ const randomInt = (low: number, high: number) => {
 };
 
 const BarFill = styled.div({
-	...tw`h-full bg-rose-600`,
+	...tw`h-full bg-pink-500`,
 
 	transition: '250ms ease-in-out',
-	boxShadow: '0 -2px 10px 2px ' + theme`colors.rose.600`,
+	boxShadow: '0 -2px 10px 2px ' + theme`colors.pink.500`,
 });
 
 export function ProgressBar(): JSX.Element {

@@ -6,7 +6,7 @@ import tw, { styled } from 'twin.macro';
 import { FieldWrapper } from '~/components/Form/Field';
 
 const TextareaInput = styled.textarea({
-	...tw`block w-full px-3 py-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`,
+	...tw`block w-full px-3 py-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-pink-500 focus:border-pink-500 sm:text-sm`,
 	variants: {
 		hasError: {
 			true: {

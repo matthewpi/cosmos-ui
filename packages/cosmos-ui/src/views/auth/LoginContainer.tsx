@@ -60,7 +60,7 @@ export function LoginContainer(): JSX.Element {
 						<div>
 							<button
 								type="submit"
-								css={tw`flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-rose-600 hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500`}
+								css={tw`flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-pink-500 border border-transparent rounded-md shadow-sm hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 ring-offset-grey-2`}
 							>
 								Sign in
 							</button>
@@ -68,7 +68,7 @@ export function LoginContainer(): JSX.Element {
 
 						<div>
 							<div css={tw`text-sm text-center`}>
-								<Link to="../../" css={tw`font-medium text-rose-600 hover:text-rose-700`}>
+								<Link to="../../" css={tw`font-medium text-pink-500 hover:text-pink-400`}>
 									Forgot password?
 								</Link>
 							</div>

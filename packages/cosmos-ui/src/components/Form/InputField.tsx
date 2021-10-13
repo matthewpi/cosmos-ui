@@ -7,17 +7,17 @@ import { FieldWrapper } from '~/components/Form/Field';
 import { Label } from '~/components/Form/Label';
 
 const Input = styled.input({
-	...tw`block w-full px-3 py-2 bg-transparent border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-0 focus:border-rose-500 sm:text-sm`,
+	...tw`block w-full px-3 py-2 bg-transparent border rounded-md shadow-sm appearance-none focus:outline-none sm:text-sm`,
 
 	variants: {
 		hasError: {
 			true: {
-				...tw`text-red-600 border-red-500`,
+				...tw`text-red-500 border-red-400 focus:border-red-500 focus:ring-red-500`,
 				'&::placeholder': tw`text-red-300`,
 			},
 			false: {
-				...tw`text-white border-grey-800`,
-				'&::placeholder': tw`text-grey-200`,
+				...tw`text-white border-grey-800 focus:border-pink-500 focus:ring-0`,
+				'&::placeholder': tw`text-grey-400`,
 			},
 		},
 	},
@@ -53,13 +53,13 @@ export const InputField = forwardRef<HTMLInputElement, FieldProps>(function Fiel
 
 						{error !== undefined && touched && (
 							<div css={tw`absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none`}>
-								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-500`} aria-hidden="true" />
+								<ExclamationCircleIcon css={tw`w-5 h-5 text-red-400`} aria-hidden="true" />
 							</div>
 						)}
 					</FieldWrapper>
 
 					{error !== undefined && touched ? (
-						<p id={id + '-error'} css={tw`mt-2 text-sm text-red-600`}>
+						<p id={id + '-error'} css={tw`mt-2 text-sm text-red-400`}>
 							{error.charAt(0).toUpperCase() + error.slice(1)}
 						</p>
 					) : description ? (
