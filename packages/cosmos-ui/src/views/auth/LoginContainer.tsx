@@ -25,7 +25,7 @@ export function LoginContainer(): JSX.Element {
 	};
 
 	return (
-		<div css={tw`flex flex-col justify-center min-h-screen py-12 bg-gray-50 sm:px-6 lg:px-8`}>
+		<div css={tw`flex flex-col justify-center min-h-screen py-12 bg-grey-2 sm:px-6 lg:px-8`}>
 			<div css={tw`sm:mx-auto sm:w-full sm:max-w-md`}>
 				<img css={tw`w-auto h-12 mx-auto`} src="/logo.svg" alt="Workflow" />
 			</div>
@@ -67,7 +67,7 @@ export function LoginContainer(): JSX.Element {
 
 						<div>
 							<div css={tw`text-sm text-center`}>
-								<Link to="../../" css={tw`font-medium text-rose-600 hover:text-rose-500`}>
+								<Link to="../../" css={tw`font-medium text-rose-600 hover:text-rose-700`}>
 									Forgot password?
 								</Link>
 							</div>

@@ -4,18 +4,20 @@ import { forwardRef } from 'react';
 import tw, { styled } from 'twin.macro';
 
 import { FieldWrapper } from '~/components/Form/Field';
+import { Label } from '~/components/Form/Label';
 
 const Input = styled.input({
-	...tw`block w-full px-3 py-2 border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-rose-500 focus:border-rose-500 sm:text-sm`,
+	...tw`block w-full px-3 py-2 bg-transparent border rounded-md shadow-sm appearance-none focus:outline-none focus:ring-0 focus:border-rose-500 sm:text-sm`,
+
 	variants: {
 		hasError: {
 			true: {
-				...tw`text-red-900 border-red-300`,
+				...tw`text-red-600 border-red-500`,
 				'&::placeholder': tw`text-red-300`,
 			},
 			false: {
-				...tw`border-gray-300`,
-				'&::placeholder': tw`text-gray-400`,
+				...tw`text-white border-grey-800`,
+				'&::placeholder': tw`text-grey-200`,
 			},
 		},
 	},
@@ -31,21 +33,23 @@ interface fieldProps {
 type FieldProps = fieldProps & Omit<React.InputHTMLAttributes<HTMLInputElement>, 'name'>;
 
 export const InputField = forwardRef<HTMLInputElement, FieldProps>(function Field(
-	{ id, name, label, showLabel, description, ...props },
+	{ id, name, label, showLabel: _showLabel, description, ...props },
 	ref,
 ) {
+	const showLabel = _showLabel === undefined ? true : _showLabel;
+
 	return (
 		<FField innerRef={ref} name={name}>
 			{({ field, meta: { error, touched } }: FFieldProps) => (
 				<div>
 					{label && (
-						<label htmlFor={id} css={showLabel ? tw`block text-sm font-medium text-gray-700` : tw`sr-only`}>
+						<Label htmlFor={id} show={showLabel}>
 							{label}
-						</label>
+						</Label>
 					)}
 
 					<FieldWrapper hasLabel={showLabel}>
-						<Input id={id} {...field} {...props} hasError={error !== undefined && touched} />
+						<Input {...field} {...props} id={id} hasError={error !== undefined && touched} />
 
 						{error !== undefined && touched && (
 							<div css={tw`absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none`}>
@@ -59,7 +63,7 @@ export const InputField = forwardRef<HTMLInputElement, FieldProps>(function Fiel
 							{error.charAt(0).toUpperCase() + error.slice(1)}
 						</p>
 					) : description ? (
-						<p id={id + '-description'} css={tw`mt-2 text-sm text-gray-500`}>
+						<p id={id + '-description'} css={tw`mt-2 text-sm text-grey-500`}>
 							{description}
 						</p>
 					) : null}

@@ -7,7 +7,7 @@ export function AuthRouter(): JSX.Element {
 	return (
 		<Routes>
 			<Route path="/login" element={<LoginContainer />} />
-			<Route path="*" element={<NotFound />} />
+			<Route path="/*" element={<NotFound />} />
 		</Routes>
 	);
 }

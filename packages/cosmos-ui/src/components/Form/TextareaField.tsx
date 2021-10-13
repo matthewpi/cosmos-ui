@@ -14,8 +14,8 @@ const TextareaInput = styled.textarea({
 				'&::placeholder': tw`text-red-300`,
 			},
 			false: {
-				...tw`border-gray-300`,
-				'&::placeholder': tw`text-gray-400`,
+				...tw`border-grey-300`,
+				'&::placeholder': tw`text-grey-400`,
 			},
 		},
 	},
@@ -39,7 +39,7 @@ export const TextareaField = forwardRef<HTMLTextAreaElement, FieldProps>(functio
 			{({ field, meta: { error, touched } }: FFieldProps) => (
 				<div>
 					{label && (
-						<label htmlFor={id} css={showLabel ? tw`block text-sm font-medium text-gray-700` : tw`sr-only`}>
+						<label htmlFor={id} css={showLabel ? tw`block text-sm font-medium text-grey-700` : tw`sr-only`}>
 							{label}
 						</label>
 					)}
@@ -59,7 +59,7 @@ export const TextareaField = forwardRef<HTMLTextAreaElement, FieldProps>(functio
 							{error.charAt(0).toUpperCase() + error.slice(1)}
 						</p>
 					) : description ? (
-						<p id={id + '-description'} css={tw`mt-2 text-sm text-gray-500`}>
+						<p id={id + '-description'} css={tw`mt-2 text-sm text-grey-500`}>
 							{description}
 						</p>
 					) : null}

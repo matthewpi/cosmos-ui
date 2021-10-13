@@ -30,13 +30,9 @@ export function App(): JSX.Element {
 			<div css={tw`w-auto mx-auto`}>
 				<BrowserRouter>
 					<Routes>
-						<Route path="/*">
-							<Route path="*" element={<DashboardRouter />} />
-						</Route>
-						<Route path="auth/*">
-							<Route path="*" element={<AuthRouter />} />
-						</Route>
-						<Route path="*" element={<NotFound />} />
+						<Route path="/*" element={<DashboardRouter />} />
+						<Route path="auth/*" element={<AuthRouter />} />
+						<Route path="/*" element={<NotFound />} />
 					</Routes>
 				</BrowserRouter>
 			</div>
