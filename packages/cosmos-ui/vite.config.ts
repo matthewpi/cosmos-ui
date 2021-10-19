@@ -1,14 +1,17 @@
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
+import { minifyHtml } from 'vite-plugin-html';
 
 export default defineConfig({
 	base: '/',
 
 	build: {
-		outDir: 'dist',
 		assetsDir: 'assets',
-		sourcemap: true,
+		assetsInlineLimit: 0,
+		outDir: 'dist',
+		emptyOutDir: true,
+		sourcemap: process.env['NODE_ENV'] !== 'production',
 	},
 
 	plugins: [
@@ -17,6 +20,7 @@ export default defineConfig({
 				plugins: ['babel-plugin-macros'],
 			},
 		}),
+		minifyHtml(),
 	],
 
 	resolve: {

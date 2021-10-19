@@ -1,7 +1,9 @@
-import { useStoreActions, useStoreState } from 'easy-peasy';
-import { useEffect, useRef, useState } from 'react';
-import { CSSTransition } from 'react-transition-group';
+import { Transition } from '@headlessui/react';
+import { css } from '@stitches/react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import tw, { styled, theme } from 'twin.macro';
+
+import { useStore } from '~/store';
 
 const randomInt = (low: number, high: number) => {
 	return Math.floor(Math.random() * (high - low) + low);
@@ -20,9 +22,9 @@ export function ProgressBar(): JSX.Element {
 	const interval = useRef<NodeJS.Timeout>();
 	const timeout = useRef<NodeJS.Timeout>();
 
-	const progress = useStoreState(state => state.progress.progress);
-	const setProgress = useStoreActions(actions => actions.progress.setProgress);
-	const continuous = useStoreState(state => state.progress.continuous);
+	const progress = useStore(state => state.progress);
+	const setProgress = useStore(state => state.setProgress);
+	const continuous = useStore(state => state.continuous);
 
 	const [visible, setVisible] = useState(false);
 
@@ -39,9 +41,7 @@ export function ProgressBar(): JSX.Element {
 		if (progress === 100) {
 			timeout.current = setTimeout(() => setProgress(undefined), 500);
 		}
-
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [progress]);
+	}, [progress, setProgress]);
 
 	useEffect(() => {
 		if (!continuous) {
@@ -50,11 +50,11 @@ export function ProgressBar(): JSX.Element {
 		}
 
 		if (!progress || progress === 0) {
-			setProgress(randomInt(10, 20));
+			const a = randomInt(1, 5);
+			console.log(a);
+			setProgress(a);
 		}
-
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [continuous]);
+	}, [continuous, progress, setProgress]);
 
 	useEffect(() => {
 		if (!continuous) {
@@ -68,15 +68,24 @@ export function ProgressBar(): JSX.Element {
 		} else {
 			interval.current = setTimeout(() => setProgress((progress ?? 0) + randomInt(1, 5)), 333);
 		}
-
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [continuous, progress]);
+	}, [continuous, progress, setProgress]);
 
 	return (
 		<div css={tw`h-[2px] fixed z-10 w-full`}>
-			<CSSTransition nodeRef={ref} timeout={150} appear in={visible} unmountOnExit classNames="fade">
+			<Transition
+				as={Fragment}
+				show={visible}
+				enter={css(tw`transition-opacity duration-150`).toString()}
+				enterFrom={css(tw`opacity-0`).toString()}
+				enterTo={css(tw`opacity-100`).toString()}
+				leave={css(tw`transition-opacity duration-150`).toString()}
+				leaveFrom={css(tw`opacity-100`).toString()}
+				leaveTo={css(tw`opacity-0`).toString()}
+				appear
+				unmount
+			>
 				<BarFill ref={ref} style={{ width: progress === undefined ? '100%' : `${progress}%` }} />
-			</CSSTransition>
+			</Transition>
 		</div>
 	);
 }

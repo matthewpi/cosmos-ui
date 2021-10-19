@@ -1,5 +1,5 @@
 import Stitches from '@stitches/react/types/stitches';
-import { StoreProvider } from 'easy-peasy';
+import React, { Fragment } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import tw, { globalStyles } from 'twin.macro';
 
@@ -7,7 +7,6 @@ import { ProgressBar } from '~/components/ProgressBar';
 import { Inter } from '~/fonts';
 import { AuthRouter } from '~/router/AuthRouter';
 import { DashboardRouter } from '~/router/DashboardRouter';
-import { store } from '~/state';
 
 import { globalCss } from '../stitches.config';
 
@@ -24,7 +23,7 @@ export function App(): JSX.Element {
 	globals();
 
 	return (
-		<StoreProvider store={store}>
+		<Fragment>
 			<ProgressBar />
 
 			<div css={tw`w-auto mx-auto`}>
@@ -36,6 +35,6 @@ export function App(): JSX.Element {
 					</Routes>
 				</BrowserRouter>
 			</div>
-		</StoreProvider>
+		</Fragment>
 	);
 }

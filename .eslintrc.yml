@@ -3,6 +3,9 @@ parserOptions:
   ecmaVersion: 12
   ecmaFeatures:
     jsx: true
+  project:
+    - ./tsconfig.json
+    - ./packages/*/tsconfig.json
 env:
   browser: true
   es6: true
@@ -26,6 +29,8 @@ rules:
   comma-dangle:
     - warn
     - always-multiline
+  dot-notation:
+    - off
   indent:
     - warn
     - tab
@@ -71,6 +76,8 @@ rules:
     - warn
   "@typescript-eslint/ban-ts-comment": 0
   "@typescript-eslint/ban-ts-ignore": 0
+  "@typescript-eslint/dot-notation":
+    - warn
   "@typescript-eslint/explicit-function-return-type": 0
   "@typescript-eslint/explicit-member-accessibility": 0
   "@typescript-eslint/no-explicit-any": 0

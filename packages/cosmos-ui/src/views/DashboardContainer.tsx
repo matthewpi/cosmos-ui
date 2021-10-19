@@ -1,10 +1,11 @@
-import { useStoreActions } from 'easy-peasy';
 import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 
+import { useStore } from '~/store';
+
 export function DashboardContainer(): JSX.Element {
-	const startContinuous = useStoreActions(actions => actions.progress.startContinuous);
-	const setComplete = useStoreActions(actions => actions.progress.setComplete);
+	const startContinuous = useStore(state => state.startContinuous);
+	const setComplete = useStore(state => state.setComplete);
 
 	return (
 		<div css={tw`relative overflow-hidden`}>

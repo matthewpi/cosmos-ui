@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<head>
 		<title>Cosmos</title>
-		<!-- <link rel="icon" type="image/svg+xml" href="/logo.svg"> -->
+
+		<!-- Security -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="base-uri 'none'; default-src 'none'; font-src 'self'; img-src 'self'; manifest-src 'self'; object-src 'none'; script-src 'self'; style-src 'unsafe-inline'"
+		/>
+		<!-- END Security -->
+
+		<!-- Meta -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="description" content="Soon&trade;" />
+		<meta name="theme-color" content="#13111C" />
+		<!-- END Meta -->
+
+		<!-- OG -->
+		<meta property="og:title" content="Cosmos" />
+		<meta property="og:site_name" content="Cosmos" />
+		<meta property="og:description" content="Soon&trade;" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:type" content="website" />
+		<!-- END OG -->
+
+		<!-- Icons -->
+		<link rel="icon" type="image/svg+xml" href="src/assets/logo.svg" />
+		<link rel="icon" type="image/png" sizes="16x16" href="src/assets/favicons/favicon-16x16.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="src/assets/favicons/favicon-32x32.png" />
+		<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="src/assets/favicons/apple-touch-icon.png" />
+		<!-- END Icons -->
+
+		<!-- Preloads -->
+		<link rel="preload" href="/fonts/inter/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin />
+		<!-- END Preloads -->
+
+		<!-- Web Manifest -->
+		<link rel="manifest" href="src/assets/site.webmanifest" />
+		<!-- END Web Manifest -->
+
+		<!-- Robots -->
+		<meta name="robots" content="index,follow" />
+		<!-- END Robots -->
 	</head>
 	<body>
 		<div id="app"></div>
 		<script type="module" src="/src/index.tsx"></script>
-  	</body>
+	</body>
 </html>
