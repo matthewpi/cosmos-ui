@@ -9,28 +9,24 @@
 	},
 	"devDependencies": {
 		"@types/node": "16.11.1",
-		"@typescript-eslint/eslint-plugin": "5.1.0",
-		"@typescript-eslint/parser": "5.1.0",
-		"eslint": "7.32.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-config-standard": "16.0.3",
-		"eslint-import-resolver-node": "0.3.6",
-		"eslint-plugin-import": "2.25.2",
-		"eslint-plugin-node": "11.1.0",
-		"eslint-plugin-promise": "5.1.0",
+		"eslint-config-xo-react": "0.25.0",
 		"eslint-plugin-react": "7.26.1",
 		"eslint-plugin-react-hooks": "4.2.0",
-		"eslint-plugin-simple-import-sort": "7.0.0",
 		"husky": "7.0.2",
+		"lint-staged": "11.2.3",
 		"prettier": "2.4.1",
-		"typescript": "4.4.4"
+		"typescript": "4.4.4",
+		"xo": "0.45.0"
 	},
 	"engines": {
 		"node": ">=14"
 	},
 	"lint-staged": {
 		"packages/**/*.{ts,tsx}": [
-			"yarn eslint --fix",
+			"yarn xo --fix",
+			"yarn prettier --write"
+		],
+		"*.html": [
 			"yarn prettier --write"
 		],
 		"*.json": [
@@ -42,5 +38,36 @@
 	},
 	"volta": {
 		"node": "14.18.1"
+	},
+	"xo": {
+		"environments": [
+			"esnext"
+		],
+		"extends": "xo-react",
+		"prettier": true,
+		"rules": {
+			"react/react-in-jsx-scope": 0
+		},
+		"overrides": [
+			{
+				"files": "packages/**/vite.config.ts",
+				"rules": {
+					"node/prefer-global/process": 0
+				}
+			},
+			{
+				"files": "packages/**/*.tsx",
+				"rules": {
+					"@typescript-eslint/naming-convention": 0,
+					"react/function-component-definition": [
+						2,
+						{
+							"namedComponents": "function-declaration"
+						}
+					],
+					"unicorn/filename-case": 0
+				}
+			}
+		]
 	}
 }

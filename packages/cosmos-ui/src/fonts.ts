@@ -30,14 +30,14 @@ function generateFontFaces(
 	const familyCapitalized = capitalize(family);
 	const fontFaces: FontFace[] = [];
 
-	weights.forEach(weight => {
-		styles.forEach(style => {
+	for (const weight of weights) {
+		for (const style of styles) {
 			const src: string[] = [];
 
-			formats.forEach(format => {
+			for (const format of formats) {
 				const file = `${familyCapitalized}-${weightsToName[weight]}${style === 'italic' ? 'Italic' : ''}`;
 				src.push(`url("/fonts/${family}/${file}.${format}") format("${format}")`);
-			});
+			}
 
 			fontFaces.push({
 				fontDisplay: 'swap',
@@ -46,19 +46,15 @@ function generateFontFaces(
 				fontWeight: weight,
 				src: src.join(' '),
 			});
-		});
-	});
+		}
+	}
 
 	return fontFaces;
 }
 
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export const Inter: FontFace[] = [
-	...generateFontFaces(
-		'Inter',
-		[100, 200, 300, 400, 500, 600, 700, 800, 900],
-		['normal', 'italic'],
-		['woff2', 'woff'],
-	),
+	...generateFontFaces('Inter', [100, 200, 300, 400, 500, 600, 700, 800, 900], ['normal', 'italic'], ['woff2', 'woff']),
 	{
 		fontDisplay: 'swap',
 		fontFamily: 'Inter var',

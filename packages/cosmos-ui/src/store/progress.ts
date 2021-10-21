@@ -13,15 +13,21 @@ export const createProgressSlice: StateSlice<ProgressSlice> = set => ({
 	continuous: false,
 	progress: undefined,
 
-	setComplete: () =>
-		set(prev => {
+	setComplete: () => {
+		set(previous => {
 			const data: Pick<ProgressSlice, 'continuous' | 'progress'> = { continuous: false };
-			if (prev.progress !== undefined) {
+			if (previous.progress !== undefined) {
 				data.progress = 100;
 			}
-			return data;
-		}),
 
-	setProgress: (payload: number | undefined) => set({ progress: payload }),
-	startContinuous: () => set({ continuous: true }),
+			return data;
+		});
+	},
+
+	setProgress: (payload: number | undefined) => {
+		set({ progress: payload });
+	},
+	startContinuous: () => {
+		set({ continuous: true });
+	},
 });

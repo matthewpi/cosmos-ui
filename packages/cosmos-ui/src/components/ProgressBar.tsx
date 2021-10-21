@@ -30,8 +30,13 @@ export function ProgressBar(): JSX.Element {
 
 	useEffect(() => {
 		return () => {
-			timeout.current && clearTimeout(timeout.current);
-			interval.current && clearInterval(interval.current);
+			if (timeout.current) {
+				clearTimeout(timeout.current);
+			}
+
+			if (interval.current) {
+				clearInterval(interval.current);
+			}
 		};
 	}, []);
 
@@ -39,20 +44,23 @@ export function ProgressBar(): JSX.Element {
 		setVisible((progress ?? 0) > 0);
 
 		if (progress === 100) {
-			timeout.current = setTimeout(() => setProgress(undefined), 500);
+			timeout.current = setTimeout(() => {
+				setProgress(undefined);
+			}, 500);
 		}
 	}, [progress, setProgress]);
 
 	useEffect(() => {
 		if (!continuous) {
-			interval.current && clearInterval(interval.current);
+			if (interval.current) {
+				clearInterval(interval.current);
+			}
+
 			return;
 		}
 
 		if (!progress || progress === 0) {
-			const a = randomInt(1, 5);
-			console.log(a);
-			setProgress(a);
+			setProgress(randomInt(1, 5));
 		}
 	}, [continuous, progress, setProgress]);
 
@@ -61,18 +69,24 @@ export function ProgressBar(): JSX.Element {
 			return;
 		}
 
-		interval.current && clearInterval(interval.current);
+		if (interval.current) {
+			clearInterval(interval.current);
+		}
 
 		if ((progress ?? 0) >= 90) {
 			setProgress(90);
 		} else {
-			interval.current = setTimeout(() => setProgress((progress ?? 0) + randomInt(1, 5)), 333);
+			interval.current = setTimeout(() => {
+				setProgress((progress ?? 0) + randomInt(1, 5));
+			}, 333);
 		}
 	}, [continuous, progress, setProgress]);
 
 	return (
 		<div css={tw`h-[2px] fixed z-10 w-full`}>
 			<Transition
+				appear
+				unmount
 				as={Fragment}
 				show={visible}
 				enter={css(tw`transition-opacity duration-150`).toString()}
@@ -81,8 +95,6 @@ export function ProgressBar(): JSX.Element {
 				leave={css(tw`transition-opacity duration-150`).toString()}
 				leaveFrom={css(tw`opacity-100`).toString()}
 				leaveTo={css(tw`opacity-0`).toString()}
-				appear
-				unmount
 			>
 				<BarFill ref={ref} style={{ width: progress === undefined ? '100%' : `${progress}%` }} />
 			</Transition>

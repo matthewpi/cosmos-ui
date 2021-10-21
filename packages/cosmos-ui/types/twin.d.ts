@@ -4,29 +4,25 @@ import type * as Util from '@stitches/react/types/util';
 
 import { config, CSS } from '../stitches.config';
 
-import 'twin.macro';
-
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface DefaultTheme {}
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 type AnyIfEmpty<T extends object> = keyof T extends never ? any : T;
 
+// eslint-disable-next-line @typescript-eslint/naming-convention, @typescript-eslint/consistent-indexed-object-style
 interface CSSObject extends CSSProperties {
 	[key: string]: CSSObject | string | number | undefined;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+// eslint-disable-next-line @typescript-eslint/naming-convention
 type CSSProp<T = AnyIfEmpty<DefaultTheme>> = CSSObject | string;
 
 type Stitches<Type = string> = <
-	Composers extends (
-		| string
-		| React.ExoticComponent<any>
-		| React.JSXElementConstructor<any>
-		| Util.Function
-		| { [name: string]: unknown }
-	)[],
+	Composers extends Array<
+		// eslint-disable-next-line @typescript-eslint/consistent-indexed-object-style
+		string | React.ExoticComponent<any> | React.JSXElementConstructor<any> | Util.Function | { [name: string]: unknown }
+	>,
 >(
 	...composers: {
 		[K in keyof Composers]: Composers[K] extends
@@ -41,16 +37,17 @@ type Stitches<Type = string> = <
 							[Pair in number | string]: CSS;
 						};
 					};
-					compoundVariants?: (('variants' extends keyof Composers[K]
-						? {
-								[Name in keyof Composers[K]['variants']]?:
-									| Util.Widen<keyof Composers[K]['variants'][Name]>
-									| Util.String;
-						  } &
-								Util.WideObject
-						: Util.WideObject) & {
-						css: CSS;
-					})[];
+					compoundVariants?: Array<
+						('variants' extends keyof Composers[K]
+							? {
+									[Name in keyof Composers[K]['variants']]?:
+										| Util.Widen<keyof Composers[K]['variants'][Name]>
+										| Util.String;
+							  } & Util.WideObject
+							: Util.WideObject) & {
+							css: CSS;
+						}
+					>;
 					defaultVariants?: 'variants' extends keyof Composers[K]
 						? {
 								[Name in keyof Composers[K]['variants']]?:
@@ -59,12 +56,12 @@ type Stitches<Type = string> = <
 						  }
 						: Util.WideObject;
 			  } & {
-						[K2 in keyof Composers[K]]: K2 extends 'compoundVariants' | 'defaultVariants' | 'variants'
-							? unknown
-							: K2 extends keyof CSS
-							? CSS[K2]
-							: unknown;
-					};
+					[K2 in keyof Composers[K]]: K2 extends 'compoundVariants' | 'defaultVariants' | 'variants'
+						? unknown
+						: K2 extends keyof CSS
+						? CSS[K2]
+						: unknown;
+			  };
 	}
 ) => StyledComponent.StyledComponent<Type, StyledComponent.StyledComponentProps<Composers>, typeof config.media, CSS>;
 

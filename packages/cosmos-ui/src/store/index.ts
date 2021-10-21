@@ -3,6 +3,7 @@ import create, { GetState, SetState, StateCreator, StoreApi } from 'zustand';
 import { createFlashSlice, FlashSlice } from '~/store/flash';
 import { createProgressSlice, ProgressSlice } from '~/store/progress';
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export type StateSlice<T extends object> = StateCreator<T>;
 
 interface State extends FlashSlice, ProgressSlice {}

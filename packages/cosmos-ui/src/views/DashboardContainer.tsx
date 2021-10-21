@@ -19,14 +19,18 @@ export function DashboardContainer(): JSX.Element {
 					<button
 						type="button"
 						css={tw`inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-white bg-pink-600 border border-transparent rounded-md shadow-sm hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500`}
-						onClick={() => startContinuous()}
+						onClick={() => {
+							startContinuous();
+						}}
 					>
 						Progress!
 					</button>
 					<button
 						type="button"
 						css={tw`inline-flex items-center px-4 py-2 mt-2 text-sm font-medium text-pink-700 bg-pink-200 border border-transparent rounded-md hover:bg-pink-200 focus:outline-none focus:ring-2 focus:ring-pink-500`}
-						onClick={() => setComplete()}
+						onClick={() => {
+							setComplete();
+						}}
 					>
 						Yeet
 					</button>

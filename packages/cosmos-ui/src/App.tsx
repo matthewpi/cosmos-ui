@@ -1,14 +1,13 @@
 import Stitches from '@stitches/react/types/stitches';
-import React, { Fragment } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import tw, { globalStyles } from 'twin.macro';
 
+import { globalCss } from '../stitches.config';
 import { ProgressBar } from '~/components/ProgressBar';
 import { Inter } from '~/fonts';
 import { AuthRouter } from '~/router/AuthRouter';
 import { DashboardRouter } from '~/router/DashboardRouter';
-
-import { globalCss } from '../stitches.config';
 
 export function NotFound(): JSX.Element {
 	return <p css={tw`font-sans`}>404 Not Found</p>;
@@ -23,7 +22,7 @@ export function App(): JSX.Element {
 	globals();
 
 	return (
-		<Fragment>
+		<>
 			<ProgressBar />
 
 			<div css={tw`w-auto mx-auto`}>
@@ -35,6 +34,6 @@ export function App(): JSX.Element {
 					</Routes>
 				</BrowserRouter>
 			</div>
-		</Fragment>
+		</>
 	);
 }

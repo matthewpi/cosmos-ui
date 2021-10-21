@@ -33,7 +33,7 @@ export function LoginContainer(): JSX.Element {
 	return (
 		<div css={tw`flex flex-col justify-center min-h-screen py-12 bg-grey-2 sm:px-6 lg:px-8`}>
 			<div css={tw`sm:mx-auto sm:w-full sm:max-w-md`}>
-				<img src={Logo} alt="Workflow" css={tw`w-auto h-12 mx-auto`} width={'52.5px'} height={'48px'} />
+				<img src={Logo} alt="Workflow" css={tw`w-[52.5px] h-12 mx-auto`} />
 			</div>
 
 			<div css={tw`mt-10 sm:mx-auto sm:w-full sm:max-w-md`}>
@@ -41,6 +41,7 @@ export function LoginContainer(): JSX.Element {
 					<form css={tw`space-y-6`} onSubmit={handleSubmit(onSubmit)}>
 						<InputField
 							{...register('email')}
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 							error={errors['email']?.message}
 							type="email"
 							autoComplete="email"
@@ -50,6 +51,7 @@ export function LoginContainer(): JSX.Element {
 
 						<InputField
 							{...register('password')}
+							// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 							error={errors['password']?.message}
 							type="password"
 							autoComplete="current-password"
