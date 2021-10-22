@@ -602,7 +602,7 @@ __metadata:
     "@tailwindcss/aspect-ratio": 0.3.0
     "@tailwindcss/forms": 0.3.4
     "@tailwindcss/typography": 0.4.1
-    "@types/node": 16.11.3
+    "@types/node": 16.11.4
     "@types/react": 17.0.31
     "@types/react-dom": 17.0.10
     "@vitejs/plugin-react": 1.0.5
@@ -614,7 +614,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-hook-form: 7.17.5
-    react-router-dom: 6.0.0-beta.7
+    react-router-dom: 6.0.0-beta.8
     swr: 1.1.0-beta.5
     tailwindcss: 2.2.17
     twin.macro: 2.8.0
@@ -781,6 +781,13 @@ __metadata:
   version: 16.11.3
   resolution: "@types/node@npm:16.11.3"
   checksum: 65682d01d2c10b9658d9b3c160ae72f0b2d626d7d02459434b21a9476518dbab38c852586c160a7a10f7e4271266e11001dd9fa605b4c7a53d3c0c045eaf4a65
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:16.11.4":
+  version: 16.11.4
+  resolution: "@types/node@npm:16.11.4"
+  checksum: 96e08c0f8bb17601c18640a8eac61e2f236fe0c8a6b01a9221c10749157358fb29fdef4b5e264f72559e72f9830e6093f3ab5fef2df90afdad562ffa45ac534c
   languageName: node
   linkType: hard
 
@@ -5454,26 +5461,26 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:6.0.0-beta.7":
-  version: 6.0.0-beta.7
-  resolution: "react-router-dom@npm:6.0.0-beta.7"
+"react-router-dom@npm:6.0.0-beta.8":
+  version: 6.0.0-beta.8
+  resolution: "react-router-dom@npm:6.0.0-beta.8"
   dependencies:
-    react-router: 6.0.0-beta.7
+    react-router: 6.0.0-beta.8
   peerDependencies:
     history: ">=5"
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: fa8ba93f16bb857384b6e18d3bc86a8bb2ef8737128aab85a4249b9f20e92a12bcede24eb9e31e75a7a5177254e9f53d8cbf043fc704a729f4fd78d02443eb38
+  checksum: e612d547e8a8b6587b063baaeeb471556e22520404d97a65796e1548b040e5e0abe2267de9c35f1d6bcee3b5bc6055b597efd828398bacc79d29dda818a69d59
   languageName: node
   linkType: hard
 
-"react-router@npm:6.0.0-beta.7":
-  version: 6.0.0-beta.7
-  resolution: "react-router@npm:6.0.0-beta.7"
+"react-router@npm:6.0.0-beta.8":
+  version: 6.0.0-beta.8
+  resolution: "react-router@npm:6.0.0-beta.8"
   peerDependencies:
     history: ">=5"
     react: ">=16.8"
-  checksum: a9b1337cb790450bf6cd4a5cb02a2d08d88a84f3c2853ef99db299db6adab09c14105794161d049656b2b8aba7e9806be04c98eb950ce11fdba064c1ad889bee
+  checksum: 7a06df351d27441bba5da808b1cf1524d1d1f3c17fd4d77bbf6c28cfcdbdadba38afb02b79c9fba6fcc0275cd594a05a4e5ed1410064d849a71ea23835784640
   languageName: node
   linkType: hard
 

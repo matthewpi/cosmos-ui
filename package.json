@@ -8,7 +8,7 @@
 		"postinstall": "husky install"
 	},
 	"devDependencies": {
-		"@types/node": "16.11.3",
+		"@types/node": "16.11.4",
 		"eslint-config-xo-react": "0.25.0",
 		"eslint-plugin-react": "7.26.1",
 		"eslint-plugin-react-hooks": "4.2.0",
