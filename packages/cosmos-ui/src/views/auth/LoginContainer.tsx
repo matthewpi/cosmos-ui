@@ -1,5 +1,5 @@
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
+import { ErrorOption, useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import tw from 'twin.macro';
 import { z } from 'zod';
@@ -19,12 +19,14 @@ const schema = z.object({
 
 export function LoginContainer(): JSX.Element {
 	const {
-		formState: { errors },
+		formState: { errors: _errors },
 		handleSubmit,
 		register,
 	} = useForm({
 		resolver: zodResolver(schema),
 	});
+
+	const errors = _errors as Record<string, ErrorOption>;
 
 	const onSubmit = (data: Values) => {
 		console.log(data);
@@ -41,7 +43,6 @@ export function LoginContainer(): JSX.Element {
 					<form css={tw`space-y-6`} onSubmit={handleSubmit(onSubmit)}>
 						<InputField
 							{...register('email')}
-							// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 							error={errors['email']?.message}
 							type="email"
 							autoComplete="email"
@@ -51,7 +52,6 @@ export function LoginContainer(): JSX.Element {
 
 						<InputField
 							{...register('password')}
-							// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 							error={errors['password']?.message}
 							type="password"
 							autoComplete="current-password"
