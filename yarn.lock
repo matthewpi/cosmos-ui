@@ -602,14 +602,14 @@ __metadata:
     "@tailwindcss/aspect-ratio": 0.3.0
     "@tailwindcss/forms": 0.3.4
     "@tailwindcss/typography": 0.4.1
-    "@types/node": 16.11.1
-    "@types/react": 17.0.30
-    "@types/react-dom": 17.0.9
+    "@types/node": 16.11.3
+    "@types/react": 17.0.31
+    "@types/react-dom": 17.0.10
     "@vitejs/plugin-react": 1.0.5
     autoprefixer: 10.3.7
     babel-plugin-macros: 3.1.0
     history: 5.0.1
-    postcss: 8.3.10
+    postcss: 8.3.11
     prop-types: 15.7.2
     react: 17.0.2
     react-dom: 17.0.2
@@ -621,7 +621,7 @@ __metadata:
     vite: 2.6.10
     vite-plugin-html: 2.1.1
     zod: 3.10.3
-    zustand: 3.5.14
+    zustand: 3.6.0
     ~: "link:./src"
   languageName: unknown
   linkType: soft
@@ -630,11 +630,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/monorepo@workspace:."
   dependencies:
-    "@types/node": 16.11.1
+    "@types/node": 16.11.3
     eslint-config-xo-react: 0.25.0
     eslint-plugin-react: 7.26.1
     eslint-plugin-react-hooks: 4.2.0
-    husky: 7.0.2
+    husky: 7.0.4
     lint-staged: 11.2.3
     prettier: 2.4.1
     typescript: 4.4.4
@@ -777,10 +777,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.1":
-  version: 16.11.1
-  resolution: "@types/node@npm:16.11.1"
-  checksum: 22cea470b89292810733b8b9fc1b6a1873bc3ed4d4cdf2f25e777dc607994bd7c12e64166d1a66dd5924734192b0a891b6aeb6813aa935f731345f4086234375
+"@types/node@npm:16.11.3":
+  version: 16.11.3
+  resolution: "@types/node@npm:16.11.3"
+  checksum: 65682d01d2c10b9658d9b3c160ae72f0b2d626d7d02459434b21a9476518dbab38c852586c160a7a10f7e4271266e11001dd9fa605b4c7a53d3c0c045eaf4a65
   languageName: node
   linkType: hard
 
@@ -805,12 +805,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.9":
-  version: 17.0.9
-  resolution: "@types/react-dom@npm:17.0.9"
+"@types/react-dom@npm:17.0.10":
+  version: 17.0.10
+  resolution: "@types/react-dom@npm:17.0.10"
   dependencies:
     "@types/react": "*"
-  checksum: b7e898e1a22643a371f58e801a3d1d8cf13a82d77063c24be73e840ef8d877ca1d04adc5db168d0dac3167dc050a26b1d70efc5fe8566a7f46a3c488a8322989
+  checksum: cc7d8d5b77ee2f3b989c107abd8ec0f2460ba1b1ee6e6d637124e1939594b5619fa4166ef0ea7632a69b68358e0b71aa618de446ccc416dcc0017175549da601
   languageName: node
   linkType: hard
 
@@ -825,14 +825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.30":
-  version: 17.0.30
-  resolution: "@types/react@npm:17.0.30"
+"@types/react@npm:17.0.31":
+  version: 17.0.31
+  resolution: "@types/react@npm:17.0.31"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e3aaac1b8fda6e3622b75db0bd7d8dc412c2f2b77a00afdd32cae8c71fb0b1ca6926ab1fbe1c536dd51d96c0ba372738993837a8df1637637aaab7b86e421b7f
+  checksum: c2ea547b3e3398f53971908ae34bdb1ca1f2d8f1cf57a6f21c37b2bb77c2e625b5349de69b3c573f969056362eddac4bbac075d5d470716feef4161e26692b83
   languageName: node
   linkType: hard
 
@@ -3472,12 +3472,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"husky@npm:7.0.2":
-  version: 7.0.2
-  resolution: "husky@npm:7.0.2"
+"husky@npm:7.0.4":
+  version: 7.0.4
+  resolution: "husky@npm:7.0.4"
   bin:
     husky: lib/bin.js
-  checksum: 2ccfe6ddc51dc05ae8ea1e2fbb893344e93a813e00c595d6b5f5e704b7b998d6b0e2adda7c57f99b5e46a60dc07c7d860269a2ea91661c6bacef0eca8e0b8e96
+  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
   languageName: node
   linkType: hard
 
@@ -5269,14 +5269,14 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.3.10":
-  version: 8.3.10
-  resolution: "postcss@npm:8.3.10"
+"postcss@npm:8.3.11":
+  version: 8.3.11
+  resolution: "postcss@npm:8.3.11"
   dependencies:
     nanoid: ^3.1.30
     picocolors: ^1.0.0
     source-map-js: ^0.6.2
-  checksum: 9f6f5ddb403fb52cacf502bd42ee7a1b9df9b362db5e68e7129e643511bcdda429bbccf5d27e6d115dd4f0a61c811e6b28a91d2db3cf57ff8825e5a7166cbbd0
+  checksum: 1a230553d74c66aa9585c90781ed8ea75f19cefea405d2117b67fbeb24b5b5e0e17be2e0c5a07db31dd085643a13394127ab2222e940771b70498331bf20f35e
   languageName: node
   linkType: hard
 
@@ -6864,15 +6864,15 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"zustand@npm:3.5.14":
-  version: 3.5.14
-  resolution: "zustand@npm:3.5.14"
+"zustand@npm:3.6.0":
+  version: 3.6.0
+  resolution: "zustand@npm:3.6.0"
   peerDependencies:
     react: ">=16.8"
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: 38f6c9ae673e44cc1e195b8ea22bb686a9cf64791413df1d4c9f980a018f7d01f14f8fe6307309aff95d9cc60e9b7618ce7bcb23e5fb3c69f9545d7a138eeed1
+  checksum: e255033ad488186cc9782badc0bf79d3beab11eef4f0816c2a04bd9a483c13f184135598fd1f3a7f4bd3d5c71f9d0d45714b2eab0312e041f7962195f9429472
   languageName: node
   linkType: hard
 
