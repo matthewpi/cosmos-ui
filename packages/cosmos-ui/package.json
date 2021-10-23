@@ -19,7 +19,7 @@
 		"react-hook-form": "7.17.5",
 		"react-router-dom": "6.0.0-beta.8",
 		"swr": "1.1.0-beta.5",
-		"zod": "3.10.3",
+		"zod": "3.11.2",
 		"zustand": "3.6.0",
 		"~": "link:./src"
 	},
