@@ -603,7 +603,7 @@ __metadata:
     "@tailwindcss/forms": 0.3.4
     "@tailwindcss/typography": 0.4.1
     "@types/node": 16.11.4
-    "@types/react": 17.0.31
+    "@types/react": 17.0.32
     "@types/react-dom": 17.0.10
     "@vitejs/plugin-react": 1.0.5
     autoprefixer: 10.3.7
@@ -615,7 +615,7 @@ __metadata:
     react-dom: 17.0.2
     react-hook-form: 7.17.5
     react-router-dom: 6.0.0-beta.8
-    swr: 1.1.0-beta.5
+    swr: 1.1.0-beta.6
     tailwindcss: 2.2.17
     twin.macro: 2.8.0
     vite: 2.6.10
@@ -825,14 +825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.31":
-  version: 17.0.31
-  resolution: "@types/react@npm:17.0.31"
+"@types/react@npm:17.0.32":
+  version: 17.0.32
+  resolution: "@types/react@npm:17.0.32"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: c2ea547b3e3398f53971908ae34bdb1ca1f2d8f1cf57a6f21c37b2bb77c2e625b5349de69b3c573f969056362eddac4bbac075d5d470716feef4161e26692b83
+  checksum: 952d33bf948b6f4ce52fbf4118d9c99c97427aa3270a6bcde9f1156bb3898f1662d8f6ca128d095b4677acaff3971b3f761940dbb437366f656ad584eb69b108
   languageName: node
   linkType: hard
 
@@ -6254,12 +6254,12 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"swr@npm:1.1.0-beta.5":
-  version: 1.1.0-beta.5
-  resolution: "swr@npm:1.1.0-beta.5"
+"swr@npm:1.1.0-beta.6":
+  version: 1.1.0-beta.6
+  resolution: "swr@npm:1.1.0-beta.6"
   peerDependencies:
     react: ^16.11.0 || ^17.0.0 || ^18.0.0
-  checksum: 0955b08d30134a09af71339659cbee456d089af5bcff3cb495ac12fe3f4577250b8bdcddf3cd3c0962f1aa95ec308bc7f5a1aa87bc796aac47219f895b17db80
+  checksum: 92d1cc553d180b19386ca39b69d30e43dfd3e8d9defbb3a9c988fad9f1233fe6eac4cf45e6f44700cb6c6e92c8fe38583edd124dc70f3f08bd96abf12443a6d4
   languageName: node
   linkType: hard
 
