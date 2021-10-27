@@ -27,6 +27,7 @@ export const createProgressSlice: StateSlice<ProgressSlice> = set => ({
 	setProgress: (payload: number | undefined) => {
 		set({ progress: payload });
 	},
+
 	startContinuous: () => {
 		set({ continuous: true });
 	},

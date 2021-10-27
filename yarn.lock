@@ -554,12 +554,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:1.0.4":
-  version: 1.0.4
-  resolution: "@heroicons/react@npm:1.0.4"
+"@heroicons/react@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@heroicons/react@npm:1.0.5"
   peerDependencies:
     react: ">= 16"
-  checksum: 08f2853a49e51f274f22e8e1bb4e7d8a49456b7eb770447da66fd06ac05bf821ddf5d93170088d61ec44ae66cfbdc877c287861d5a3d22aad1785659502e3a71
+  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
   languageName: node
   linkType: hard
 
@@ -596,14 +596,14 @@ __metadata:
   dependencies:
     "@babel/core": 7.15.8
     "@headlessui/react": 1.4.1
-    "@heroicons/react": 1.0.4
+    "@heroicons/react": 1.0.5
     "@hookform/resolvers": 2.8.2
     "@stitches/react": 1.2.5
     "@tailwindcss/aspect-ratio": 0.3.0
     "@tailwindcss/forms": 0.3.4
     "@tailwindcss/typography": 0.4.1
-    "@types/node": 16.11.4
-    "@types/react": 17.0.32
+    "@types/node": 16.11.6
+    "@types/react": 17.0.33
     "@types/react-dom": 17.0.10
     "@vitejs/plugin-react": 1.0.5
     autoprefixer: 10.3.7
@@ -613,15 +613,15 @@ __metadata:
     prop-types: 15.7.2
     react: 17.0.2
     react-dom: 17.0.2
-    react-hook-form: 7.17.5
+    react-hook-form: 7.18.0
     react-router-dom: 6.0.0-beta.8
     swr: 1.1.0-beta.6
     tailwindcss: 2.2.17
-    twin.macro: 2.8.0
-    vite: 2.6.10
+    twin.macro: 2.8.1
+    vite: 2.6.13
     vite-plugin-html: 2.1.1
-    zod: 3.11.2
-    zustand: 3.6.0
+    zod: 3.11.6
+    zustand: 3.6.1
     ~: "link:./src"
   languageName: unknown
   linkType: soft
@@ -630,12 +630,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@matthewpi/monorepo@workspace:."
   dependencies:
-    "@types/node": 16.11.4
+    "@types/node": 16.11.6
     eslint-config-xo-react: 0.25.0
     eslint-plugin-react: 7.26.1
     eslint-plugin-react-hooks: 4.2.0
     husky: 7.0.4
-    lint-staged: 11.2.4
+    lint-staged: 11.2.6
     prettier: 2.4.1
     typescript: 4.4.4
     xo: 0.45.0
@@ -777,10 +777,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.11.4":
-  version: 16.11.4
-  resolution: "@types/node@npm:16.11.4"
-  checksum: 96e08c0f8bb17601c18640a8eac61e2f236fe0c8a6b01a9221c10749157358fb29fdef4b5e264f72559e72f9830e6093f3ab5fef2df90afdad562ffa45ac534c
+"@types/node@npm:16.11.6":
+  version: 16.11.6
+  resolution: "@types/node@npm:16.11.6"
+  checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
   languageName: node
   linkType: hard
 
@@ -825,14 +825,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:17.0.32":
-  version: 17.0.32
-  resolution: "@types/react@npm:17.0.32"
+"@types/react@npm:17.0.33":
+  version: 17.0.33
+  resolution: "@types/react@npm:17.0.33"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: 952d33bf948b6f4ce52fbf4118d9c99c97427aa3270a6bcde9f1156bb3898f1662d8f6ca128d095b4677acaff3971b3f761940dbb437366f656ad584eb69b108
+  checksum: 5f53f3dae034229ff1eccb5de1c16d046696e883f8eae81b86e95c532798e655015e4edff8a6c9ec8f1c0ef12bb60dec43622d06256ba33ba6069e67a74b8d4e
   languageName: node
   linkType: hard
 
@@ -1167,13 +1167,6 @@ __metadata:
   dependencies:
     sprintf-js: ~1.0.2
   checksum: 7ca6e45583a28de7258e39e13d81e925cfa25d7d4aacbf806a382d3c02fcb13403a07fb8aeef949f10a7cfe4a62da0e2e807b348a5980554cc28ee573ef95945
-  languageName: node
-  linkType: hard
-
-"argparse@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "argparse@npm:2.0.1"
-  checksum: 83644b56493e89a254bae05702abf3a1101b4fa4d0ca31df1c9985275a5a5bd47b3c27b7fa0b71098d41114d8ca000e6ed90cad764b306f8a503665e4d517ced
   languageName: node
   linkType: hard
 
@@ -4032,17 +4025,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "js-yaml@npm:4.1.0"
-  dependencies:
-    argparse: ^2.0.1
-  bin:
-    js-yaml: bin/js-yaml.js
-  checksum: c7830dfd456c3ef2c6e355cc5a92e6700ceafa1d14bba54497b34a99f0376cecbb3e9ac14d3e5849b426d5a5140709a66237a8c991c675431271c4ce5504151a
-  languageName: node
-  linkType: hard
-
 "jsesc@npm:^2.5.1":
   version: 2.5.2
   resolution: "jsesc@npm:2.5.2"
@@ -4165,18 +4147,17 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:11.2.4":
-  version: 11.2.4
-  resolution: "lint-staged@npm:11.2.4"
+"lint-staged@npm:11.2.6":
+  version: 11.2.6
+  resolution: "lint-staged@npm:11.2.6"
   dependencies:
     cli-truncate: 2.1.0
     colorette: ^1.4.0
     commander: ^8.2.0
+    cosmiconfig: ^7.0.1
     debug: ^4.3.2
     enquirer: ^2.3.6
     execa: ^5.1.1
-    js-yaml: ^4.1.0
-    lilconfig: ^2.0.3
     listr2: ^3.12.2
     micromatch: ^4.0.4
     normalize-path: ^3.0.0
@@ -4186,7 +4167,7 @@ fsevents@~2.3.2:
     supports-color: 8.1.1
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 9c1478d1903029a1db15b81c3f4d56a99b28774871961d18ea38dff1d7648bbca2eaa55c53c5c71732add89994bb07d3b91ce127495a7e586f519dfdb8a45938
+  checksum: b9071621db351c553579bd18df3d80fb753f851c4f1f72db0aaf12e713eab25b6d8a044dab2957817de7da02054a63f7725a49c763aee09295133f0d554f4d3f
   languageName: node
   linkType: hard
 
@@ -5450,12 +5431,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:7.17.5":
-  version: 7.17.5
-  resolution: "react-hook-form@npm:7.17.5"
+"react-hook-form@npm:7.18.0":
+  version: 7.18.0
+  resolution: "react-hook-form@npm:7.18.0"
   peerDependencies:
     react: ^16.8.0 || ^17
-  checksum: 1948be28cbcaee76899720ae8ead6f6bcc58c9678364c69590d15a0d7c50884f5f8f3b1034a5bc91495bedd05b0fb07048d88cc6c93b3fa8aacf32c50f2bfda7
+  checksum: 556b873f28385ca75f76de9046cf70279dc960a0ad4629113f2e396da835ed6326a92c325d93e1f834e8f44b1521a91de88fbecf7d87593fbed7e593605c3dae
   languageName: node
   linkType: hard
 
@@ -6502,9 +6483,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"twin.macro@npm:2.8.0":
-  version: 2.8.0
-  resolution: "twin.macro@npm:2.8.0"
+"twin.macro@npm:2.8.1":
+  version: 2.8.1
+  resolution: "twin.macro@npm:2.8.1"
   dependencies:
     "@babel/parser": ^7.12.5
     "@babel/template": ^7.14.5
@@ -6521,7 +6502,7 @@ resolve@^2.0.0-next.3:
     string-similarity: ^4.0.3
     tailwindcss: ^2.2.7
     timsort: ^0.3.0
-  checksum: c65b9614ebb92988bd51ad4fcdd835b6197c905b0c7d8c8ade2a5e4df667ae49540bc58c06a00855c6e15f305bd4e32dae3bdf0b50457d9e697d69ae0b0c7c19
+  checksum: ed93ff973f95012fa47beaadea1c71eaabdf9c5982f4064625dcc7d9516cc183493797a9a520ca0d95e1a1e5e00b55ac2320b731dfc7ded1b402ceaedb0a1096
   languageName: node
   linkType: hard
 
@@ -6689,9 +6670,9 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"vite@npm:2.6.10":
-  version: 2.6.10
-  resolution: "vite@npm:2.6.10"
+"vite@npm:2.6.13":
+  version: 2.6.13
+  resolution: "vite@npm:2.6.13"
   dependencies:
     esbuild: ^0.13.2
     fsevents: ~2.3.2
@@ -6714,7 +6695,7 @@ resolve@^2.0.0-next.3:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 802b59c275ac099d6cfcf17636d1034cb6d3e7a363a33a4bf990cbe859059cec35249e958a26a59d5cfde3dbbbf207b8ac8817eb127063c96957d2e573389370
+  checksum: 59e09d8650328eac44990de9aaa9f49011113e3c1d8c3b54d9b8550496c8d290ec14149048bbbd49b39f78a80f23c4019130bd55924bfd139f63423be8d4754a
   languageName: node
   linkType: hard
 
@@ -6876,22 +6857,22 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"zod@npm:3.11.2":
-  version: 3.11.2
-  resolution: "zod@npm:3.11.2"
-  checksum: 85b40a5ba62e868dc2fdfe51abb0f81eb6fc894ebc7c6d3ca77b825f2258d283849e577a38c156cc4d2f145ea6950cf66dae4e0b2ac8750bd490fe958373c9fa
+"zod@npm:3.11.6":
+  version: 3.11.6
+  resolution: "zod@npm:3.11.6"
+  checksum: 044ac416450f179a0c88240f27849d2886c777cebade42df10e5f04125b0265cec82d9bd741a7dcb11796b2ea88b32c86be7d36932a4bed6af57002560359db1
   languageName: node
   linkType: hard
 
-"zustand@npm:3.6.0":
-  version: 3.6.0
-  resolution: "zustand@npm:3.6.0"
+"zustand@npm:3.6.1":
+  version: 3.6.1
+  resolution: "zustand@npm:3.6.1"
   peerDependencies:
     react: ">=16.8"
   peerDependenciesMeta:
     react:
       optional: true
-  checksum: e255033ad488186cc9782badc0bf79d3beab11eef4f0816c2a04bd9a483c13f184135598fd1f3a7f4bd3d5c71f9d0d45714b2eab0312e041f7962195f9429472
+  checksum: febd01e8b6a3ecb5baa015473a9939b2747d8b0945d82f20815d3079fb71022bf1b37519447ba2fdbc6751e4e39d03202c923bd21d4711c0210f2b9b8a34e726
   languageName: node
   linkType: hard
 
